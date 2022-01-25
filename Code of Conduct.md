@@ -24,10 +24,11 @@ Standards
 	-	Accepting responsibilities and apologizing to those affected by your mistakes/decisions
 	-	Focusing on what is best not for ourselves ,but  for the whole group
 	
-	Examples of conduct that is unacceptable :
+	Examples of conduct that is unacceptable:
 	-	Public or private harassment
 	-	Plagiarism
 	-	Hacking the computer systems
+	-	Missing work deadlines
 	
 Enforcement responsibilities
 
