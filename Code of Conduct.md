@@ -26,14 +26,14 @@ Standards
 	
 	Examples of conduct that is unacceptable :
 	-	Public or private harassment
-	-
+	-	Plagiarism
+	-	Hacking the computer systems
 	
 Enforcement responsibilities
 
 Scope
 
 Enforcement
-
 	We all depend on each other, so be patient and courteous. This is the only way we will 
 	thrive as a team and produce the best product/app as a group. Your decisions will affect the 
 	group, the clients, and the product. So before taking any decision, be considerate and think 
