@@ -39,6 +39,4 @@ Enforcement
 	thrive as a team and produce the best product/app as a group. Your decisions will affect the 
 	group, the clients, and the product. So before taking any decision, be considerate and think 
 	about the others and the possible consequences of your decisions.
-	
-	
-Copyright 2022 checkmate group
+
