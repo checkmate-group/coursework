@@ -24,7 +24,7 @@
 	* Being respectful of differing opinions ,viewpoints and experiences
 	* Giving and accepting constructive feedback 
 	* Accepting responsibilities and apologizing to those affected by your mistakes/decisions
-	* Focusing on what is best not for ourselves ,but  for the whole group
+	* Focusing on what is best not for ourselves, but for the whole group
 	
 	The group considers  the form of inappropriate conduct that are set out below to constitute 
 	misconduct that is likely to lead to disciplinary action. The list shouldn't be considered exhaustive.
