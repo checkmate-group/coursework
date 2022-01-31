@@ -4,7 +4,7 @@
 	CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
 	programmers. Collaboration between group members and productive communication with the 
 	tutor are critical factors for the teamwork. While Roehampton’s Students Code of Conduct 
-	is providing the official framework for our group [I'm an inline-style link with title](https://www.google.com "Google's Homepage") , 
+	is providing the official framework for our group *[Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)* , 
 	our group’s Code of Conduct defines 
 	the minimum requirements of professional behaviour we expect from each member of the group.
 
