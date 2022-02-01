@@ -1,5 +1,5 @@
 # Code of Conduct
-
+ 
 ## Introduction
 CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
 programmers. Collaboration between group members and productive communication with the 
