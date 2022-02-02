@@ -14,3 +14,8 @@ providing a method to create, read, update, and delete data from a web site to a
 * [@Nero-DevOps](https://github.com/Nero-DevOps)
 * [@archeris32](https://github.com/archeris32)
 * [@KezzyRk](https://github.com/KezzyRk)
+
+
+# Wiki
+The GitHub Wiki has more information regarding the technicalities of the project. It's used for group members
+to remember important information while developing the project.
