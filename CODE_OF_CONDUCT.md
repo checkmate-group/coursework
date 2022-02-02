@@ -1,5 +1,5 @@
 # Code of Conduct
-![](logo.png "Logo")
+![](.git_assets/logo.png "Logo")
  
 ## Introduction
 CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
