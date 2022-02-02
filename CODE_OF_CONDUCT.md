@@ -1,3 +1,5 @@
+<img src="logo.png" width="1200" height="250">
+
 # Code of Conduct
  
 ## Introduction
