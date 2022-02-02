@@ -1,6 +1,5 @@
-<img src="logo.png" width="1200" height="250">
-
 # Code of Conduct
+![](logo.png "Logo")
  
 ## Introduction
 CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
