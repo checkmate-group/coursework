@@ -8,7 +8,7 @@ tutor are critical factors for the teamwork. While Roehampton’s Students Code 
 is providing the official framework for our group( *[Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)*) , 
 our group’s Code of Conduct defines 
 the minimum requirements of professional behaviour we expect from each member of the group.
-Our goal is to help each member of the group to reach their potential,where everyone feels safe,
+Our goal is to create an environment where each member can reach their potential,where everyone feels safe,
 accepted and valued.
 
 ## Our pledge
