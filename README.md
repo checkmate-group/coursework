@@ -1,6 +1,6 @@
 # Coursework
 
-![](logo.png "Logo")
+![](.git_assets/logo.png "Logo")
 
 In this coursework we are tasked with creating an application for the smooth and efficient
 operation of a business. We will work on the project as a Scrum team and therefore need to 
