@@ -78,7 +78,7 @@ group, the clients, and the product. So before taking any decision, be considera
 about the others and the possible consequences of your decisions.
 
 
-##Members and Contact
+## Members and Contact
 For any questions regarding the current project please contact one of the following members of the group:
 * [@ZOulhadj](https://github.com/ZOulhadj) - Team Leader 1
 * [@Nero-DevOps](https://github.com/Nero-DevOps) - Scrum Master
