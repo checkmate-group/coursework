@@ -18,6 +18,9 @@ providing a method to create, read, update, and delete data from a web site to a
 * [@KezzyRk](https://github.com/KezzyRk)
 
 
+![](.git_assets/gource.gif "Group Work")
+
+
 # Wiki
 The GitHub Wiki has more information regarding the technicalities of the project. It's used for group members
 to remember important information while developing the project.
