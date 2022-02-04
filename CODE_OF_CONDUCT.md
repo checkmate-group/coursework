@@ -8,6 +8,8 @@ tutor are critical factors for the teamwork. While Roehampton’s Students Code 
 is providing the official framework for our group( *[Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)*) , 
 our group’s Code of Conduct defines 
 the minimum requirements of professional behaviour we expect from each member of the group.
+Our goal is to create an environment where each member can reach their potential,where everyone feels safe,
+accepted and valued.
 
 ## Our pledge
 We vow to act socially responsible and in an honourable manner. 
@@ -23,10 +25,12 @@ themselves as respectful citizens of both the group/university and the local com
 Examples of conduct that promotes a constructive environment:
 
 * Demonstrating empathy and kindness toward group members
+* Being punctual for classes and other appointments.
 * Being respectful of differing opinions ,viewpoints and experiences
 * Giving and accepting constructive feedback 
 * Accepting responsibilities and apologizing to those affected by your mistakes/decisions
 * Focusing on what is best not for ourselves, but for the whole group
+* Always be clear in your instructions/advices/feedback
 	
 The group considers the form of inappropriate conduct that are set out below to constitute 
 misconduct that is likely to lead to disciplinary action. The list shouldn't be considered exhaustive.
@@ -34,9 +38,14 @@ misconduct that is likely to lead to disciplinary action. The list shouldn't be 
 Examples of conduct that may lead to disciplinary action:
 	
 * Public or private harassment
-* Plagiarism / Cheating
+* Plagiarism / Duplication/Falsification/Cheating
+* Collusion
 * Missing work deadlines
 * Failing to comply with any group's rule, regulation or policy
+* Breaking the law
+* Fraud,deceit,deception or dishonesty in relation to group members
+* Misuse or unauthorised use of group's resources,including taking/manipulating/sharing of code without group's approval
+
 
 
 ## Enforcement responsibilities
@@ -67,4 +76,14 @@ We all depend on each other, so be patient and courteous. This is the only way w
 thrive as a team and produce the best product/app as a group. Your decisions will affect the 
 group, the clients, and the product. So before taking any decision, be considerate and think 
 about the others and the possible consequences of your decisions.
+
+
+## Members and Contact
+For any questions regarding the current project please contact one of the following members of the group:
+* [@ZOulhadj](https://github.com/ZOulhadj) - Team Leader 1
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Scrum Master
+* [@archeris32](https://github.com/archeris32) - Team Leader 2
+* [@KezzyRk](https://github.com/KezzyRk) - Project Owner
+
+
 
