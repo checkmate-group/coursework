@@ -1,0 +1,89 @@
+@import url('reuse-classes.css');
+@import url('responsive-design.css');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    /* font-family: 'Courier New', Courier, monospace; */
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: rgb(228, 228, 228);
+}
+
+#app
+{
+    height: 100%;
+}
+
+#main
+{
+    height: 100%;  
+    padding: 5rem 0;   
+    overflow-y: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+header
+{
+    /* height: 400px; */
+    background-color: rgb(255, 255, 255);
+}
+
+footer
+{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav
+{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.452);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+.links a
+{
+    color: black;
+    margin: 0 1.5rem;
+}
+
+table,td,th
+{
+    border: 1px solid;
+}
+
+td,th
+{
+    text-align: center;
+    word-wrap: break-word;
+    text-overflow:clip;
+    text-align: center;
+    padding: 0.5rem 0;
+    /* padding: 0.5rem; */
+}
+
+.table-head
+{
+    background-color: rgb(207, 241, 188);
+}
