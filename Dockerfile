@@ -1,5 +1,5 @@
 # Set the baseImage to use for subsequent instructions. 
-FROM node:16 as base
+FROM node:14 as base
 # Set the working directory for any subsequent
 WORKDIR /app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
