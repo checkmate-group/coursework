@@ -1,0 +1,16 @@
+extends layouts/main-layout.pug
+block haeder_content
+    h1(class="big-title") Continents Population 
+
+block content
+    h1(class="second-title") Population in each continent
+    br
+    table
+        tr(class="table-head")
+            th Continent                 
+            th Population     
+        for cp in data
+            tr
+                td= cp.continent
+                td= cp.population                                                   
+    br
