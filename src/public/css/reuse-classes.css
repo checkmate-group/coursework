@@ -1,6 +1,6 @@
 .container
 {
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -44,4 +44,35 @@
 .justify-end
 {
     justify-content: right;
+}
+
+/**********************************/
+
+.pd-t-b-5
+{
+    padding: 5rem 0;
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.fadein
+{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    height: 480px !important;
+}
+
+.opaque
+{
+    opacity: 1 !important;
+}
+
+.fadebottom
+{
+    opacity: 1 !important;
+    transform: translateX(-180px) translateY(0) !important;
+    height: 200px !important;
 }

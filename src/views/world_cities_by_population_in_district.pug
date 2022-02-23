@@ -1,0 +1,38 @@
+extends layouts/main-layout.pug
+block content
+    div(class="flex align-center justify-space-between")
+        div(class="title")
+            h1(class="second-title") All Cities In The World By District
+        div(id="searchtool")
+            div(class="drop-down-container")
+                div(class="search-setting" data-action="menu")
+                    a
+                        li search
+                            i(class="fas fa-search")
+                div(class="search-drop-down hidden" data-option="cities")
+                    div(class="flex flex-dir-col")
+                        div(class="input-block")
+                            input(type="text" class="input" id="name"  data-value="district" placeholder="district name")
+                        div(class="input-block")
+                            input(type="number" class="input" id="number"  data-value="nbre_cities" min="0" max="10000" placeholder="number of cities")
+                        div(class="input-block")
+                            input(id="searchBtn" type="button" class="button" value="search")
+    br
+    for district in districts
+        div(class="table-container")
+            h2(class="table-head-title")= district
+            br
+            table
+                tr(class="table-head")
+                    th Name 
+                    th CountryCode               
+                    th District     
+                    th Population   
+                for city in citiesInDistrict
+                    if city.District === district
+                        tr(class="rows")
+                            td= city.Name 
+                            td= city.CountryCode               
+                            td= city.District     
+                            td= city.Population                  
+            br
