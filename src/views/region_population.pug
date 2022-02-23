@@ -1,0 +1,16 @@
+extends layouts/main-layout.pug
+block haeder_content
+    h1(class="big-title") Regions Population 
+
+block content
+    h1(class="second-title") Population in each region
+        br
+        table
+            tr(class="table-head")
+                th Region                 
+                th Population     
+            for rp in data
+                tr
+                    td= rp.region
+                    td= rp.population                                                   
+        br

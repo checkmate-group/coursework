@@ -74,6 +74,10 @@ thrive as a team and produce the best product/app as a group. Your decisions wil
 group, the clients, and the product. So before taking any decision, be considerate and think 
 about the others and the possible consequences of your decisions.
 
+## Submission
+Every member should upload their part of work every Monday and Wednesday. Missing the deadlines 
+would result in consequences such as being reported to the tutor.
+
 
 ## Members and Contact
 For any enquiries regarding the current project please contact one of the following group members:

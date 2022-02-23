@@ -1,0 +1,33 @@
+networks:   
+    app-tier:
+        driver: bridge
+        
+services:
+    db:
+        image: database
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_DATABASE: world
+            MYSQL_USER: root
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_ROOT_HOST: '%'
+
+        build: db/
+        ports:
+            - 3306:3306
+        networks:
+            - app-tier 
+        container_name: database
+
+    web:
+        image: webapp
+        build: .
+        ports:
+            - 3000:3000
+        volumes:
+            - .:/code
+        networks:
+            - app-tier
+        depends_on:
+            - db
+        container_name: web_app

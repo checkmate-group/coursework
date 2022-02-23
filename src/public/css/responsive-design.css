@@ -1,0 +1,20 @@
+/****** responsive design ******/
+
+@media screen and (max-width:720px){
+
+    .container
+    {
+        max-width: auto;
+        padding: 1rem;
+    }
+
+    .big-title
+    {
+        font-size: 3rem !important;
+    }
+
+    .second-title
+    {
+        font-size: 1.2rem !important;
+    }
+}

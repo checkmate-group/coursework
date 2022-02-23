@@ -1,16 +1,22 @@
-# Set the baseImage to use for subsequent instructions. 
-FROM node:12
-# Set the working directory for any subsequent
-WORKDIR /app
+FROM node:16
+
+WORKDIR ./src
+
+# Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
-COPY package*.json ./
-# Execute any commands on top of the current image as a new layer and commit the results.
+# where available (npm@5+)
+# COPY package*.json ./
+COPY package.json ./
+
 RUN npm install
-#  Bundle app source
+# If you are building your code for production
+# RUN npm ci --only=production
+
+# FROM base as dev
+# ENV NODE_ENV=development
+
+# Bundle app source
 COPY . .
-# Set the environment variable key to the value which is 8080
-ENV PORT=8080
-# Define the network ports that this container will listen on at runtime.
-EXPOSE 8080
-# Provide defaults for an executing container.
+
+EXPOSE 3000
 CMD [ "npm", "start" ]
