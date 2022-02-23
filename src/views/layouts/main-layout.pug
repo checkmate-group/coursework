@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        //- <meta charset="UTF-8">
+        //- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        //- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        title World Population Informations
+        link(rel="stylesheet", href="/css/app.css")
+        script(src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous")
+        script(src="/scripts/toolBar.js") 
+        script(src="/scripts/searchtool.js") 
+        script(src="/scripts/utils.js") 
+        //- <link rel="stylesheet"  href="/assets/css/app.css">
+        //- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        //- <script async src="/scripts/app.js"></script>
+    body
+        div(id="app")
+            header 
+                div(class="container")
+                nav(id="toolBar" class="flex align-center justify-space-around")
+                    div(class="links flex-center")
+                        div(class="link" data-action="home")
+                            a(href="/")
+                                li Home
+                        div(class="drop-down-container")
+                            div(class="link" data-action="menu")
+                                a
+                                    li Countries 
+                            div(class="drop-down hidden" data-option="countries")
+                                div(class="flex flex-dir-col")
+                                    a(href="/world_countries_by_population")
+                                        li Ordered by population
+                                    a(href="/world_countries_by_population_in_continent")
+                                        li Continent - ordered by population
+                                    a(href="/world_countries_by_population_in_region")
+                                        li Region - ordered by population
+
+                        div(class="drop-down-container")
+                            div(class="link" data-action="menu")
+                                a
+                                    li Cities 
+                            div(class="drop-down hidden" data-option="cities")
+                                //- div(class="arrow-top")
+                                div(class="flex flex-dir-col")
+                                    a(href="/world_cities_by_population")
+                                        li Ordered by population
+                                    a(href="/world_cities_by_population_in_continent")
+                                        li Continent - ordered by population
+                                    a(href="/world_cities_by_population_in_region")
+                                        li Region - ordered by population
+                                    a(href="/world_cities_by_population_in_country")
+                                        li Country - ordered by population
+                                    a(href="/world_cities_by_population_in_district")
+                                        li District - ordered by population
+                        div(class="drop-down-container")
+                            div(class="link" data-action="menu")
+                                a
+                                    li Capital Cities 
+                            div(class="drop-down hidden" data-option="capital-cities")
+                                div(class="flex flex-dir-col")
+                                    a(href="/world_capital_cities_by_population")
+                                        li Ordered by population
+                                    a(href="/world_capital_cities_by_population_in_continant")
+                                        li Continent - ordered by population
+                                    a(href="/world_capital_cities_by_population_in_region")
+                                        li Region - ordered by population
+                        div(class="drop-down-container")
+                            div(class="link" data-action="menu")
+                                a
+                                    li Population Informations 
+                            div(class="drop-down hidden" data-option="capital-cities")
+                                div(class="flex flex-dir-col")
+                                    a(href="/world_population")
+                                        li Population of the world
+                                    a(href="/continent_population")
+                                        li Population of a continent
+                                    a(href="/region_population")
+                                        li Population of a region
+                                    a(href="/country_population")
+                                        li Population of a country
+                                    a(href="/district_population")
+                                        li Population of a district
+                                    a(href="/city_population")
+                                        li Population of a city
+                                    a(href="/population_languages")
+                                        li Population Languages
+                        //- div(class="drop-down-container")
+                        //-     div(class="link" data-action="menu")
+                        //-         a
+                        //-             li People Languages 
+                        //-     div(class="drop-down hidden" data-option="capital-cities")
+                        //-         div(class="flex flex-dir-col")
+                        //-             a(href="/population_languages")
+                        //-                 li Population Languages
+                                    //- a(href="/continent_population")
+                                    //-     li English
+                                    //- a(href="/region_population")
+                                    //-     li Hindi
+                                    //- a(href="/country_population")
+                                    //-     li Spanish
+                                    //- a(href="/district_population")
+                                    //-     li Arabic
+                div(class="container")
+                    block haeder_content
+            div(id="main")
+                div(class="container pd-t-b-5")
+                    block content
+            footer
+                div(class="container flex-center")
+                    h5 2021-2022 &copy copyright - world population informations v.0.0.1
