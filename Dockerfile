@@ -1,6 +1,6 @@
 FROM node:16
 
-WORKDIR ./src
+WORKDIR /src
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -19,4 +19,5 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
+
 CMD [ "npm", "start" ]

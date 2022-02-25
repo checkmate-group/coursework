@@ -1,0 +1,12 @@
+table(class="table")
+    thead
+        tr
+            th Language                 
+            th Population     
+            th Percentage % 
+    tbody
+        for l in data
+            tr
+                td(id="language" data-value=l.language)= l.language 
+                td(id="population" data-value=l.population)= l.population                                                  
+                td(id="percentage")
