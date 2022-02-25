@@ -1,0 +1,20 @@
+for region in regions
+    table(class="table")
+        thead
+            tr
+                th Code 
+                th Name                 
+                th Continent     
+                th Region
+                th Population
+                th Capital  
+        tbody
+            for country in countriesInRegion
+                if country.Region === region
+                    tr(class="rows")
+                        td= country.Code 
+                        td= country.Name                   
+                        td= country.Continent                                  
+                        td= country.Region                                  
+                        td(class="text-end")= country.Population                                  
+                        td(class="text-end")= country.Capital

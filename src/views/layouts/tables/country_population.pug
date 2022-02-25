@@ -1,0 +1,10 @@
+table(class="table")
+    thead
+        tr
+            th Country                 
+            th Population 
+    tbody  
+        for cp in data
+            tr(class="rows")
+                td= cp.country
+                td= cp.population   

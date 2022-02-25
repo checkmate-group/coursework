@@ -1,0 +1,18 @@
+for region in regions
+    table(class="table")
+        thead
+            tr
+                th Name 
+                th CountryCode               
+                th District     
+                th Population   
+                th region  
+        tbody
+            for city in citiesInRegion
+                if city.Region == region
+                    tr(class="rows")
+                        td= city.Name 
+                        td= city.CountryCode               
+                        td= city.District     
+                        td= city.Population                  
+                        td= city.Region

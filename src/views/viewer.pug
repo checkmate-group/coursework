@@ -1,0 +1,87 @@
+extends layouts/main
+
+block content
+    div(class="container")
+        h1(class="p-2") Database Viewer
+
+        <form class="mb-5">
+            <div class="d-flex">
+                <select class="form-select m-2" id="view-select" aria-label="Database views">
+                    option(value="-1") --
+                    option(value="0") World population
+                    option(value="1") World countries by population
+                    option(value="2") World countries by population in region
+                    option(value="3") World countries by population in continent
+                    option(value="4") World cities by population
+                    option(value="5") World cities by population in region
+                    option(value="6") World cities by population in district
+                    option(value="7") World cities by population in country
+                    option(value="8") World cities by population in continent
+                    option(value="9") World capital cities by population
+                    option(value="10") World capital cities by population in region
+                    option(value="11") World capital cities by population in continent
+                    option(value="12") Region population
+                    option(value="13") Population languages
+                    option(value="14") District population
+                    option(value="15") Country population
+                    option(value="16") Continent population
+                    option(value="17") City population
+                </select>
+            </div>
+            <div class="d-flex justify-content-center">
+                a(class="btn btn-primary m-2 w-25" id="view-table-button" href="#" role="button") View Report
+            </div>
+        </form>
+
+
+        div(class="" id="table")
+            div(class="d-flex justify-content-between align-items-center")
+                h2(class="text-muted fw-bold" id="view-header") Table name
+                <div class="dropdown">
+                    button(class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false") Filter
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            //- Display a different table based on which view we want
+            if name == "world_population"
+                include layouts/tables/world_population
+            else if name == "region_population"
+                include layouts/tables/region_population
+            else if name == "population_languages"
+                include layouts/tables/population_languages
+            else if name == "district_population"
+                include layouts/tables/district_population
+            else if name == "country_population"
+                include layouts/tables/country_population
+            else if name == "continent_population"
+                include layouts/tables/continent_population
+            else if name == "city_population"
+                include layouts/tables/city_population
+            else if name == "world_countries_by_population"
+                include layouts/tables/world_countries_by_population
+            else if name == "world_countries_by_population_in_region"
+                include layouts/tables/world_countries_by_population_in_region
+            else if name == "world_countries_by_population_in_continent"
+                include layouts/tables/world_countries_by_population_in_continent
+            else if name == "world_cities_by_population"
+                include layouts/tables/world_cities_by_population
+            else if name == "world_cities_by_population_in_region"
+                include layouts/tables/world_cities_by_population_in_region
+            else if name == "world_cities_by_population_in_district"
+                include layouts/tables/world_cities_by_population_in_district
+            else if name == "world_cities_by_population_in_continent"
+                include layouts/tables/world_cities_by_population_in_continent
+            else if name == "world_capital_cities_by_population"
+                include layouts/tables/world_capital_cities_by_population
+            else if name == "world_capital_cities_by_population_in_region"
+                include layouts/tables/world_capital_cities_by_population_in_region
+            else if name == "world_capital_cities_by_population_in_continent"
+                include layouts/tables/world_capital_cities_by_population_in_continent
+
+block scripts 
+    script(src="/js/view_table.js")
