@@ -15,6 +15,10 @@ router.get("/", (req, res) => {
     return res.render("index");
 });
 
+router.get("/login", (req, res) => {
+    return res.render("login");
+});
+
 router.get("/viewer", (req, res) => {
     return res.render("viewer");
 });
