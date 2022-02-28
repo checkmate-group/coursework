@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+Database database
+
+skinparam actorStyle awesome
+actor User #green
+User--> (Login)
+(Login) --> (Credentials are incorrect)
+(Credentials are incorrect)--> (Login)
+(Login) --> (Credentials are correct)
+(Credentials are correct)-->(Menu)
+(Menu)-->(Choose element)
+(Choose element)-->(Website):User visits the page
+(Website)----->[Server]:Web requests Database for the right info
+[Server]--->database:Server receives enquiries from (Website) and sends it to the [Database]!
+database-->[Server]
+[Server]-->(Website):Send the filtered information to display
+(Website)--->(Display info)
+
+
+
+
+
+note right of database
+receives the enquiries, apply the desired filters
+and sends back the desired information!
+end note
+
+
+@enduml
