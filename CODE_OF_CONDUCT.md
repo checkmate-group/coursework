@@ -44,6 +44,8 @@ Examples of conduct that may lead to disciplinary action:
 * Breaking the law
 * Fraud, deceit, deception or dishonesty in relation to group members
 * Misuse or unauthorised use of group's resources, including taking/manipulating/sharing of code without group's approval
+* Missing more than 2 deadlines in a row 
+* Missing weekly meetings (missing 2 meetings in a row will lead to diciplinary action)
 
 ## Enforcement responsibilities
 The group has the authority to establish procedures and impose disciplinary action on a student 
@@ -61,7 +63,7 @@ Where a member is found to have breached the Code of Conduct, the group may take
 * Issue a report to class tutor
 * Suspension of the group member(s) until further notice
 
-If the team cannot come to an agreement this will result in the member involved being release from the
+If the team cannot come to an agreement this will result in the member involved being released from the
 group.
 
 ## Scope
@@ -75,8 +77,9 @@ group, the clients, and the product. So before taking any decision, be considera
 about the others and the possible consequences of your decisions.
 
 ## Submission
-Every member should upload their part of work every Monday and Wednesday. Missing the deadlines 
-would result in consequences such as being reported to the tutor.
+Each member should upload their part of work every Monday and Wednesday. Missing the deadlines 
+would result in consequences such as being reported to the tutor.Missing deadlines is allowed only 
+with one of team leaders approval.
 
 
 ## Members and Contact
