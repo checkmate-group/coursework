@@ -3,9 +3,9 @@
   "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node ./src/index.js",
     "test": "jest",
-    "dev": "set NODE_ENV=development && node ./index.js"
+    "dev": "set NODE_ENV=development && node ./src/index.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
