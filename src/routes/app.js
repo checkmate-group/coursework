@@ -22,6 +22,9 @@ router.get("/login", (req, res) => {
 router.get("/viewer", (req, res) => {
     return res.render("viewer");
 });
+router.get("/about", (req, res) => {
+    return res.render("about");
+});
 
 router.get("/viewer/world_countries_by_population", (req, res) => {
     pool.getConnection((err, connection) => {
