@@ -1,6 +1,6 @@
 # Meeting Minutes
 
-![](.git_assets/logo.png "Logo")
+![](../.git_assets/logo.png "Logo")
 ## 14/02/22 – First meeting (1 Hour 25 minutes)
 The first meeting was an introductory session for the group. During the meeting we discussed various topics such as the name for the group and getting 
 to know eachother.
