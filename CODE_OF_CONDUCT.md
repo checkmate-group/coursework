@@ -77,9 +77,11 @@ group, the clients, and the product. So before taking any decision, be considera
 about the others and the possible consequences of your decisions.
 
 ## Submission
-Each member should upload their part of work every Monday and Wednesday. Missing the deadlines 
+Each member should upload their part of work every Monday and Wednesday.Missing the deadlines 
 would result in consequences such as being reported to the tutor.Missing deadlines is allowed only 
 with one of team leaders approval.
+Weekly meetings will take place in which all the members are expected to participate and contribute.
+The meetings will take place every Monday and Wednesday at 21:00, unless we agree otherwise.
 
 
 ## Members and Contact
