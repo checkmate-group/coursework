@@ -85,9 +85,9 @@ with one of team leaders approval.
 ## Members and Contact
 For any enquiries regarding the current project please contact one of the following group members:
 * [@ZOulhadj](https://github.com/ZOulhadj) - Team Leader 1
-* [@Nero-DevOps](https://github.com/Nero-DevOps) - Scrum Master
 * [@archeris32](https://github.com/archeris32) - Team Leader 2
 * [@KezzyRk](https://github.com/KezzyRk) - Project Owner
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Scrum Master
 
 
 
