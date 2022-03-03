@@ -1,4 +1,4 @@
-# Coursework
+# Software Engineering Coursework
 
 ![](.git_assets/logo.png "Logo")
 
