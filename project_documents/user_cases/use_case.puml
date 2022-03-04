@@ -18,7 +18,7 @@ User--> (Home Page)
 (WebApp)----->(Server):WebApp send queries to the Database
 (Server)--->database:Server receives queries from Website and sends it to the Database!
 database-->(Server):Database send the filtered information back to server
-(Server)-->(Website):Send the filtered information to WebApp.
+(Server)-->(WebApp):Send the filtered information to WebApp.
 (WebApp)--->(Display info): Display required information
 
 
