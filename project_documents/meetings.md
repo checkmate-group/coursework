@@ -49,7 +49,7 @@ Due to the fact that some people weren't able to attend the class in person due 
 and new information that we recevied during today's class.
 
 ## 26/02/2022 -Project meeting(120 minutes)
-This meeting was to conclude what is needed for sprint two and discuss the steps we would need to take to progress nicely. We all looked at the project board to see what tasks needed to be done, and we assigned them to each other.
+This meeting was to conclude what is needed for sprint two and discuss the steps we would need to take to progress nicely. We all looked at the project board to see what tasks needed to be done, and we assigned them to each other. All members attended this.
 
 ## 28/02/2022 -Update meeting(50 minutes)
 We have a video call on our Discord group. Everyone shares their ideas about how to improve the WebApp. 
