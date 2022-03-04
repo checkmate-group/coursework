@@ -6,6 +6,8 @@ In software development and product management, a user story is an informal, nat
 
 User stories are a type of boundary object. They facilitate sensemaking and communication; and may help software teams document their understanding of the system and its context. [refrence - Wikipedia](https://en.wikipedia.org/wiki/User_story)
 
+Remember that your user stories take the form:
+As a < user role >, I can < activity > so that < business value >.
 
 # Table
 
