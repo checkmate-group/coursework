@@ -2,14 +2,10 @@
 ![](.git_assets/logo.png "Logo")
  
 ## Introduction
-CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
-programmers. Collaboration between group members and productive communication with the 
-tutor are critical factors for the teamwork. While Roehampton’s Students Code of Conduct 
-is providing the official framework for our group (*[Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)*), 
-our group’s Code of Conduct defines 
-the minimum requirements of professional behaviour we expect from each member of the group.
-Our goal is to create an environment where each member can reach their potential,where everyone feels safe,
-accepted and valued.
+Checkmate is a group that is made up of diverse, enthusiastic and like-minded people. 
+Productive communication between Checkmate group members and the tutor are critical factors for teamwork. The Roehampton’s students code of conduct
+([Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)) is the backbone for our group, In other words, our group’s code of conduct builds on top of this to provide a well-defined set of rules
+that ensures professional behaviour, high standards of work and most imporantly working together. Our goal is to create an environment where each member can reach their potential, where everyone feels safe, accepted and valued.
 
 ## Our pledge
 We vow to act socially responsible and in an honourable manner. 
