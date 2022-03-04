@@ -1,0 +1,10 @@
+table(class="table")
+    thead
+        tr
+            th Region                 
+            th Population 
+    tbody
+        for rp in data
+            tr
+                td= rp.region
+                td= rp.population

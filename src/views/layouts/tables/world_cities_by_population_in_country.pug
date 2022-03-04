@@ -1,0 +1,18 @@
+for country in countries
+    table(class="table")
+        thead
+            tr
+                th Name 
+                th CountryCode               
+                th District     
+                th Population   
+                th Country  
+        tbody
+            for city in citiesInCountry
+                if city.Country === country
+                    tr(class="rows")
+                        td= city.Name 
+                        td= city.CountryCode               
+                        td= city.District     
+                        td= city.Population                  
+                        td= city.Country 

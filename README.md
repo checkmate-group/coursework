@@ -1,6 +1,6 @@
-# Coursework
+# Software Engineering Coursework
 
-![](.git_assets/logo.png "Logo")
+![](/.git_assets/logo.png "Logo")
 
 In this coursework we are tasked with creating an application for the smooth and efficient
 operation of a business. We will work on the project as a Scrum team and therefore need to 
@@ -16,6 +16,9 @@ providing a method to create, read, update, and delete data from a web site to a
 * [@Nero-DevOps](https://github.com/Nero-DevOps)
 * [@archeris32](https://github.com/archeris32)
 * [@KezzyRk](https://github.com/KezzyRk)
+
+
+![](.git_assets/gource.gif "Group Work")
 
 
 # Wiki
