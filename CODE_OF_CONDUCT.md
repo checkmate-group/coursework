@@ -1,5 +1,5 @@
 # Code of Conduct
-![](.git_assets/logo.png "Logo")
+![](/.git_assets/logo.png "Logo")
  
 ## Introduction
 Checkmate is a group that is made up of diverse, enthusiastic and like-minded people that work together towards a common goal. 
