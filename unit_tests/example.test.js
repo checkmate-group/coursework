@@ -1,7 +1,4 @@
 test("A simple unit test.", () => {
-
-
-
     const value = 2 + 2;
     expect(value).toBe(4);
 });
