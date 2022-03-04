@@ -48,6 +48,8 @@ During this meeting we assigned tasks to a few members of the group.
 Due to the fact that some people weren't able to attend the class in person due to various conditions, we held a meeting to bring them up to date with all the requirements
 and new information that we recevied during today's class.
 
+## 26/02/2022 -Update meeting(120 minutes)
+
 ## 28/02/2022 -Update meeting(50 minutes)
 We have a video call on our Discord group. Everyone shares their ideas about how to improve the WebApp. 
 [@ZOulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/).We find it really helpful.
