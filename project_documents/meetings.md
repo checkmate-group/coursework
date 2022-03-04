@@ -71,10 +71,10 @@ We purely set up this meeting to discuss some of the issues that we made so we c
 Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proofread everything we have done and make sure our project backlog had been updated with all the necessary information.
 
 # Group Members
-* [@ZOulhadj](https://github.com/ZOulhadj)
-* [@Nero-DevOps](https://github.com/Nero-DevOps)
-* [@archeris32](https://github.com/archeris32)
-* [@KezzyRk](https://github.com/KezzyRk)
+* [Zakariya Oulhadj](https://github.com/ZOulhadj)
+* [Taylor Head](https://github.com/Nero-DevOps)
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32)
+* [Mohammed Kaizra](https://github.com/KezzyRk)
 
 # Code of Conduct
 The principles stated in our group's ([Code of Coduct](coursework/CODE_OF_CONDUCT.md)) were respected during this meetings.
