@@ -57,7 +57,8 @@ We have a video call on our Discord group. Everyone shares their ideas about how
 
 ## 01/03/2022 -Update meeting(50 minutes)
 
-## 02/03/2022 -Update meeting(50 minutes)
+## 02/03/2022 -Update meeting(90 minutes)
+We discussed how to keep GitHub very clean by ensuring we have the correct file structure for the project and ensuring files are named correctly. We all agreed on how Docker should set up the system and the naming structure to navigate GitHub easily. All members attended this.
 
 ## 03/03/2022 -Update meeting(50 minutes)
 
