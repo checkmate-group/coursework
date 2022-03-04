@@ -1,4 +1,4 @@
-# Cockburn's Use Case Template
+# Use Case Template
 
 
 ## Use case
