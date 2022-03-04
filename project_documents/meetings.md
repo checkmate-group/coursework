@@ -63,8 +63,8 @@ We discussed how to keep GitHub very clean by ensuring we have the correct file 
 ## 03/03/2022 -Update meeting(60 minutes)
 We purely set up this meeting to discuss some of the issues that we made so we could discuss them as a team and work on them as a group which we all did. Next, we discussed the operational base of the project and started to plan out the strategy so we could meet all the specifications and make sure everything was fulfilled. 
 
-
-## 04/03/2022 -Update meeting(50 minutes)
+## 04/03/2022 -Update meeting(30 minutes)
+Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proofread everything we have done and make sure our project backlog had been updated with all the necessary information.
 
 # Group Members
 * [@ZOulhadj](https://github.com/ZOulhadj)
