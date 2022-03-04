@@ -1,7 +1,13 @@
-![](/.git_assets/logo.png "Logo")
+![](../../.git_assets/logo.png "Logo")
 
 # User story 
 
+In software development and product management, a user story is an informal, natural language description of features of a software system. They are written from the perspective of an end user or user of a system, and may be recorded on index cards, Post-it notes, or digitally in project management software. Depending on the project, user stories may be written by different stakeholders like client, user, manager, or development team.
+
+User stories are a type of boundary object. They facilitate sensemaking and communication; and may help software teams document their understanding of the system and its context. [refrence - Wikipedia](https://en.wikipedia.org/wiki/User_story)
+
+
+# Table
 
 
 |  	| Theme 	| User story 	| Priority 	| Estimate 	| Acceptance criteria 	| Release 	| Assigned 	|
