@@ -48,7 +48,7 @@ During this meeting we assigned tasks to a few members of the group.
 Due to the fact that some people weren't able to attend the class in person due to various conditions, we held a meeting to bring them up to date with all the requirements
 and new information that we recevied during today's class.
 
-## 26/02/2022 -Update meeting(120 minutes)
+## 26/02/2022 -Project meeting(120 minutes)
 This meeting was to conclude what is needed for sprint two and discuss the steps we would need to take to progress nicely. We all looked at the project board to see what tasks needed to be done, and we assigned them to each other.
 
 ## 28/02/2022 -Update meeting(50 minutes)
