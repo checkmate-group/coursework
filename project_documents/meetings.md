@@ -55,6 +55,8 @@ This meeting was to conclude what is needed for sprint two and discuss the steps
 We have a video call on our Discord group. Everyone shares their ideas about how to improve the WebApp. 
 [@ZOulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/).We find it really helpful.
 
+## 01/02/2022 -Update meeting(50 minutes)
+
 # Group Members
 * [@ZOulhadj](https://github.com/ZOulhadj)
 * [@Nero-DevOps](https://github.com/Nero-DevOps)
