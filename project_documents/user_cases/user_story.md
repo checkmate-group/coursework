@@ -13,3 +13,9 @@
 | 5 	| Sprint 2|As a programmer I would like to implement a "persona" so that all of us understand his needs, goals , etc  	|  High	| 4 hours 	|Define "persona" , gather information  and send it to the person in charge of AboutUs page  	|  release 0.2	| [Mohammed Kaizra](https://github.com/KezzyRk) &  [Taylor Head](https://github.com/Nero-DevOps) 	|  	
 
 
+
+## Note
+As the project continues, this file will be updated with new stories.
+
+
+© 2022 Checkmate Group
