@@ -18,10 +18,10 @@ significant experience with GitHub, so during this meeting he shares some knowle
 merges as well as the GitHub website.
 
 We also decide on who's going to do what for this sprint:
-[@ZOulhadj](https://github.com/ZOulhadj) - GitHub Set-Up
-[@Nero-DevOps](https://github.com/Nero-DevOps) - Dockerfile Set-up
-[@archeris32](https://github.com/archeris32) - Code of Conduct
-[@KezzyRk](https://github.com/KezzyRk) - First release created
+* [@ZOulhadj](https://github.com/ZOulhadj) - GitHub Set-Up
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Dockerfile Set-up
+* [@archeris32](https://github.com/archeris32) - Code of Conduct
+* [@KezzyRk](https://github.com/KezzyRk) - First release created
 
 ## 02/02/22 – Progress update (35 minutes)
 The third meeting was quite a short one due to the extensive meeting that we had the previous week. Over the course of this meeting, we simply cross-checked 
