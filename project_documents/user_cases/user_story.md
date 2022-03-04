@@ -1,4 +1,4 @@
-![](../.git_assets/logo.png "Logo")
+![](../../.git_assets/logo.png "Logo")
 
 # User story 
 
