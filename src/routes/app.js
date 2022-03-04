@@ -3,97 +3,54 @@ const mysql = require('mysql2');
 const router = express.Router();
 
 // config the database connection
-
 const pool = mysql.createPool({
-    connectionLimit: 100,
     host: "172.19.0.1",
     port: "3306",
-    user : "root",
-    password : "password",
-    database : "world"
+    user: "root",
+    password: "password",
+    database: "world"
 });
 
-// redirect to the index page 
-
-router.get('/',(req,res) => {
-
-    res.render('index');
+router.get("/", (req, res) => {
+    return res.render("index");
 });
 
-// country
+router.get("/login", (req, res) => {
+    return res.render("login");
+});
 
-router.get('/world_countries_by_population',(req,res) => {
+router.get("/viewer", (req, res) => {
+    return res.render("viewer");
+});
+router.get("/about", (req, res) => {
+    return res.render("about");
+});
 
-    console.log("connected...");
-
-    pool.getConnection((err,connection) => {
-            
+router.get("/viewer/world_countries_by_population", (req, res) => {
+    pool.getConnection((err, connection) => {
         let query = "select Code,Name,Continent,Region,Population,Capital from country order by population desc";
-            
-        connection.query(query,(err,data)=>{
-                
-            connection.release();
-                    
-            if(!err)
-            {
-                res.render('world_countries_by_population',{data});
-            }
-            else 
-            {
-                console.log("error");
-            }
-        });
-    });
-});
 
-router.get('/world_countries_by_population_in_continent',(req,res) => {
-
-    pool.getConnection((err,connection) => {
-
-        console.log("connected...");
-
-        let query = "select Code,Name,Continent,Region,Population,Capital from country order by continent,population desc";
-
-        connection.query(query,(err,data)=>{
-
+        connection.query(query, (err, data) => {
             connection.release();
 
-            let countriesInContinent = [];
-            let continentsSet = new Set();
-            let continents = [];
-
-            data.forEach(country => {
-
-                continentsSet.add(country.Continent);
-                countriesInContinent.push(country);
-            });
-
-            continentsSet.forEach(continent => {
-
-                continents.push(continent);
-            });
-
-            continentsSet = null;
-
-            if(!err)
-            {
-                res.render('world_countries_by_population_in_continent',{continents,countriesInContinent});
+            if (err) {
+                console.log("Error: world_countries_by_population failed to obtain data");
+                return;
             }
-            else 
-            {
-                console.log("error");
-            }
+
+            res.render("viewer", { name: "world_countries_by_population", data});
         });
-    });
+    });  
 });
 
-router.get('/world_countries_by_population_in_region',(req,res)=>{
 
-    pool.getConnection((err,connection)=>{
+router.get('/viewer/world_countries_by_population_in_region', (req, res) => {
+
+    pool.getConnection((err, connection) => {
 
         let query = "select Code,Name,Continent,Region,Population,Capital from country order by region,population desc";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
@@ -114,63 +71,33 @@ router.get('/world_countries_by_population_in_region',(req,res)=>{
 
             regionsSet = null;
 
-            if(!err)
-            {
-                res.render('world_countries_by_population_in_region',{regions,countriesInRegion});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
 
+            res.render("viewer", { name: "world_countries_by_population_in_region", regions, countriesInRegion });
         });
     });
 });
 
-// city
 
-router.get('/world_cities_by_population',(req,res)=>{
+router.get("/viewer/world_countries_by_population_in_continent", (req, res) => {
+    pool.getConnection((err, connection) => {
+        let query = "select Code,Name,Continent,Region,Population,Capital from country order by continent,population desc";
 
-    pool.getConnection((err,connection)=>{
-
-        let query = "select * from city order by population desc";
-
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('world_cities_by_population',{data});
-            }
-            else
-            {
-                console.log("error");
-            }
-        });
-        
-    });
-});
-
-router.get('/world_cities_by_population_in_continent',(req,res)=>{
-
-    pool.getConnection((err,connection)=>{
-
-        let query = "select ci.*,co.continent as 'Continent' from city ci,country co where co.Code = ci.CountryCode order by co.continent,ci.population desc";
-
-        connection.query(query,(err,data)=>{
-
-            connection.release();
-            
-            let citiesInContinent = [];
+            let countriesInContinent = [];
             let continentsSet = new Set();
             let continents = [];
 
-            data.forEach(city => {
+            data.forEach(country => {
 
-                continentsSet.add(city.Continent);
-                citiesInContinent.push(city);
-
+                continentsSet.add(country.Continent);
+                countriesInContinent.push(country);
             });
 
             continentsSet.forEach(continent => {
@@ -180,26 +107,47 @@ router.get('/world_cities_by_population_in_continent',(req,res)=>{
 
             continentsSet = null;
 
-            if(!err)
-            {
-                res.render('world_cities_by_population_in_continent',{continents,citiesInContinent});
+            if (err) {
+                console.log("Error: world_countries_by_population_in_continent failed to obtain data");
+                return;
             }
-            else 
-            {
-                console.log("error");
-            }
+
+            res.render("viewer", { name: "world_countries_by_population_in_continent", continents, countriesInContinent });
+
         });
-        
     });
 });
 
-router.get('/world_cities_by_population_in_region',(req,res)=>{
 
-    pool.getConnection((err,connection)=>{
+// city
+router.get("/viewer/world_cities_by_population", (req, res) => {
+
+    pool.getConnection((err, connection) => {
+
+        let query = "select * from city order by population desc";
+
+        connection.query(query, (err, data) => {
+
+            connection.release();
+
+            if (err) {
+                console.log("error");
+                return;         
+            }
+
+            res.render("viewer", { name: "world_cities_by_population", data });
+        });
+
+    });
+});
+
+router.get("/viewer/world_cities_by_population_in_region", (req, res) => {
+
+    pool.getConnection((err, connection) => {
 
         let query = "select ci.*,co.region as 'Region' from city ci,country co where co.Code = ci.CountryCode order by co.region,ci.population desc";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
@@ -221,26 +169,60 @@ router.get('/world_cities_by_population_in_region',(req,res)=>{
 
             regionsSet = null;
 
-            if(!err)
-            {
-                res.render('world_cities_by_population_in_region',{regions,citiesInRegion});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+
+            res.render("viewer", { name: "world_cities_by_population_in_region", regions, citiesInRegion });
 
         });
     });
 });
 
-router.get('/world_cities_by_population_in_country',(req,res)=>{
+router.get("/viewer/world_cities_by_population_in_district", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
+
+        let query = "select * from city order by district,population desc";
+
+        connection.query(query, (err, data) => {
+
+            connection.release();
+
+            let citiesInDistrict = [];
+            let districtsSet = new Set();
+            let districts = [];
+
+            data.forEach(city => {
+
+                districtsSet.add(city.District);
+                citiesInDistrict.push(city);
+
+            });
+
+            districtsSet.forEach(district => {
+
+                districts.push(district);
+            });
+
+            if (err) {
+                console.log("error");
+                return;
+            }
+
+            res.render("viewer", { name: "world_cities_by_population_in_district", districts, citiesInDistrict });
+        });
+    });
+});
+
+router.get("/viewer/world_cities_by_population_in_country", (req, res) => {
+
+    pool.getConnection((err, connection) => {
 
         let query = "select ci.*,co.Name as 'Country' from city ci,country co where co.Code = ci.CountryCode order by co.Name,ci.population desc";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
@@ -262,88 +244,23 @@ router.get('/world_cities_by_population_in_country',(req,res)=>{
 
             countriesSet = null;
 
-            if(!err)
-            {
-                res.render('world_cities_by_population_in_country',{countries,citiesInCountry});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+            
+            res.render("viewer", { name: "world_cities_by_population_in_country", countries, citiesInCountry });
         });
     });
 });
 
-router.get('/world_cities_by_population_in_district',(req,res)=>{
+router.get("/viewer/world_cities_by_population_in_continent", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
-        let query = "select * from city order by district,population desc";
+        let query = "select ci.*,co.continent as 'Continent' from city ci,country co where co.Code = ci.CountryCode order by co.continent,ci.population desc";
 
-        connection.query(query,(err,data)=>{
-
-            connection.release();
-
-            let citiesInDistrict = [];
-            let districtsSet = new Set();
-            let districts = [];
-
-            data.forEach(city => {
-
-                districtsSet.add(city.District);
-                citiesInDistrict.push(city);
-
-            });
-
-            districtsSet.forEach(district => {
-
-                districts.push(district);
-            });
-
-            if(!err)
-            {
-                res.render('world_cities_by_population_in_district',{districts,citiesInDistrict});
-            }
-            else
-            {
-                console.log("error");
-            }
-        });
-    });
-});
-
-// capital
-
-router.get('/world_capital_cities_by_population',(req,res)=>{
-
-    pool.getConnection((err,connection)=>{
-
-        let query = "select ci.Name,co.Name as 'Country',ci.Population from city ci,country co where co.Code = ci.CountryCode and co.capital = ci.id order by ci.population desc";
-
-        connection.query(query,(err,data)=>{
-
-            connection.release();
-
-            if(!err)
-            {
-                res.render('world_capital_cities_by_population',{data});
-            }
-            else
-            {
-                console.log("error");
-            }
-        });
-        
-    });
-});
-
-router.get('/world_capital_cities_by_population_in_continant',(req,res)=>{
-
-    pool.getConnection((err,connection)=>{
-
-        let query = "select ci.Name,co.Name as 'Country',co.Continent as 'Continent',ci.Population from city ci,country co where co.Code = ci.CountryCode and co.capital = ci.id order by co.Continent,ci.population desc";
-
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
@@ -365,26 +282,27 @@ router.get('/world_capital_cities_by_population_in_continant',(req,res)=>{
 
             continentsSet = null;
 
-            if(!err)
-            {
-                res.render('world_capital_cities_by_population_in_continant',{continents,citiesInContinent});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+
+
+            res.render("viewer", { name: "world_cities_by_population_in_continent", continents, citiesInContinent });
         });
-        
+
     });
 });
 
-router.get('/world_capital_cities_by_population_in_region',(req,res)=>{
+// capital
 
-    pool.getConnection((err,connection)=>{
+router.get("/viewer/world_capital_cities_by_population_in_region", (req, res) => {
+
+    pool.getConnection((err, connection) => {
 
         let query = "select ci.Name,co.Name as 'Country',co.Region as 'Region',ci.Population from city ci,country co where co.Code = ci.CountryCode and co.capital = ci.id order by co.Region,ci.population desc";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
@@ -407,173 +325,219 @@ router.get('/world_capital_cities_by_population_in_region',(req,res)=>{
             regionsSet = null;
 
 
-            if(!err)
-            {
-                res.render('world_capital_cities_by_population_in_region',{regions,citiesInRegion});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;  
             }
+
+            res.render("viewer", { name: "world_capital_cities_by_population_in_region", regions, citiesInRegion });
+        });
+
+    });
+});
+
+router.get("/viewer/world_capital_cities_by_population_in_continent", (req, res) => {
+    pool.getConnection((err, connection) => {
+
+        let query = "select ci.Name,co.Name as 'Country',co.Continent as 'Continent',ci.Population from city ci,country co where co.Code = ci.CountryCode and co.capital = ci.id order by co.Continent,ci.population desc";
+
+        connection.query(query, (err, data) => {
+
+            connection.release();
+
+            let citiesInContinent = [];
+            let continentsSet = new Set();
+            let continents = [];
+
+            data.forEach(city => {
+
+                continentsSet.add(city.Continent);
+                citiesInContinent.push(city);
+
+            });
+
+            continentsSet.forEach(continent => {
+
+                continents.push(continent);
+            });
+
+            continentsSet = null;
+
+            if (err) {
+                console.log("error");
+                return;
+                
+            }
+
+            res.render("viewer", { name: "world_capital_cities_by_population_in_continent", continents, citiesInContinent });
+        });
+
+    });
+});
+
+router.get("/viewer/world_capital_cities_by_population", (req, res) => {
+
+    pool.getConnection((err, connection )=> {
+        let query = "select ci.Name,co.Name as 'Country',ci.Population from city ci,country co where co.Code = ci.CountryCode and co.capital = ci.id order by ci.population desc";
+
+        connection.query(query, (err, data) => {
+
+            connection.release();
+
+            if(err) {
+                console.log("error");
+                return;           
+            }
+
+            res.render("viewer", { name: "world_capital_cities_by_population", data});
         });
         
     });
 });
 
+
 // population
 
-router.get('/world_population',(req,res)=>{
+router.get("/viewer/world_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select sum(population) as population from country"
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('world_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+
+            res.render("viewer", { name: "world_population", data });
         });
     });
 });
 
-router.get('/continent_population',(req,res)=>{
+router.get("/viewer/continent_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select continent,sum(population) as population from country group by continent"
 
-        connection.query(query,(err,data)=>{
-            
+        connection.query(query, (err, data) => {
+
             connection.release();
 
-            if(!err)
-            {
-                res.render('continent_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+
+            res.render("viewer", { name: "continent_population", data });
         });
     });
 });
 
-router.get('/region_population',(req,res)=>{
+router.get("/viewer/region_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select region,sum(population) as population from country group by region"
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('region_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
             }
+
+            res.render("viewer", { name: "region_population", data });
         });
     });
 });
 
-router.get('/country_population',(req,res)=>{
+router.get("/viewer/country_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select name as country,sum(population) as population from country group by country";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('country_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;              
             }
+            
+            res.render("viewer", { name: "country_population", data });
         });
     });
 });
 
-router.get('/district_population',(req,res)=>{
+router.get("/viewer/district_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select district,sum(population) as population from city group by district";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('district_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;         
             }
+
+            res.render("viewer", { name: "district_population", data });
         });
     });
 });
 
-router.get('/city_population',(req,res)=>{
+router.get("/viewer/city_population", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select name as city,sum(population) as population from city group by city";
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('city_population',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
+                
             }
+
+            res.render("viewer", { name: "city_population", data });
         });
     });
 });
 
 // population languages
 
-router.get('/population_languages',(req,res)=>{
+router.get("/viewer/population_languages", (req, res) => {
 
-    pool.getConnection((err,connection)=>{
+    pool.getConnection((err, connection) => {
 
         let query = "select sum(co.population) as population,cl.language as language from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language order by population desc"
 
-        connection.query(query,(err,data)=>{
+        connection.query(query, (err, data) => {
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('population_languages',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
+                
             }
+
+            res.render("viewer", { name: "population_languages", data });
         });
     });
 });

@@ -1,0 +1,10 @@
+table(class="table")
+    thead
+        tr
+            th City                 
+            th Population 
+    tbody
+        for cp in data
+            tr
+                td= cp.city
+                td= cp.population

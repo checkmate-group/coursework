@@ -1,9 +1,17 @@
-extends layouts/main-layout.pug
-block content
-    h1
-    //- p this is from the index #{ best }
-    //- p= best
+extends layouts/main
 
-    //- ul
-    //-     for h in data
-    //-         li= h
+block content
+    div(class="bg-dark text-secondary px-4 py-5 text-center" bis_skin_checked="1")
+        div(class="py-5" bis_skin_checked="1")
+            h1(class="display-5 fw-bold text-white") Database Viewer
+            div(class="col-lg-6 mx-auto" bis_skin_checked="1")
+                p(class="fs-5 mb-4") 
+                 | This is the Checkmate group database viewer. 
+                 | The site make use of multiple technologies that display
+                 | databse data onto the site.
+
+                div(class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1")
+                    a(class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="/viewer" role="button") 
+                     | Create
+                    a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
+                     | Login

@@ -2,14 +2,10 @@
 ![](.git_assets/logo.png "Logo")
  
 ## Introduction
-CheckMate is a group that is made up of diverse, brilliant people and enthusiastic 
-programmers. Collaboration between group members and productive communication with the 
-tutor are critical factors for the teamwork. While Roehampton’s Students Code of Conduct 
-is providing the official framework for our group (*[Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)*), 
-our group’s Code of Conduct defines 
-the minimum requirements of professional behaviour we expect from each member of the group.
-Our goal is to create an environment where each member can reach their potential,where everyone feels safe,
-accepted and valued.
+Checkmate is a group that is made up of diverse, enthusiastic and like-minded people that work together towards a common goal. 
+Productive communication between Checkmate group members and the tutor are critical factors for teamwork. The University of Roehamptons student code of conduct
+([Roehampton's Student Code of Coduct](https://www.roehampton.ac.uk/globalassets/documents/corporate-information/policies/student-code-of-conduct-july-2018.pdf)) is the backbone for our group, In other words, our group’s code of conduct builds on top of this to provide a well-defined set of rules
+that ensures professional behaviour, high standards of work and most imporantly working together. Our goal is to create an environment where each member can reach their potential, where everyone feels safe, accepted and valued.
 
 ## Our pledge
 We vow to act socially responsible and in an honourable manner. 
@@ -44,6 +40,8 @@ Examples of conduct that may lead to disciplinary action:
 * Breaking the law
 * Fraud, deceit, deception or dishonesty in relation to group members
 * Misuse or unauthorised use of group's resources, including taking/manipulating/sharing of code without group's approval
+* Missing more than 2 deadlines in a row 
+* Missing weekly meetings (missing 2 meetings in a row will lead to diciplinary action)
 
 ## Enforcement responsibilities
 The group has the authority to establish procedures and impose disciplinary action on a student 
@@ -61,7 +59,7 @@ Where a member is found to have breached the Code of Conduct, the group may take
 * Issue a report to class tutor
 * Suspension of the group member(s) until further notice
 
-If the team cannot come to an agreement this will result in the member involved being release from the
+If the team cannot come to an agreement this will result in the member involved being released from the
 group.
 
 ## Scope
@@ -75,8 +73,11 @@ group, the clients, and the product. So before taking any decision, be considera
 about the others and the possible consequences of your decisions.
 
 ## Submission
-Every member should upload their part of work every Monday and Wednesday. Missing the deadlines 
-would result in consequences such as being reported to the tutor.
+Each member should upload their part of work every Monday and Wednesday.Missing the deadlines 
+would result in consequences such as being reported to the tutor.Missing deadlines is allowed only 
+with one of team leaders approval.
+Weekly meetings will take place in which all the members are expected to participate and contribute.
+The meetings will take place every Monday and Wednesday at 21:00, unless we agree otherwise.
 
 
 ## Members and Contact

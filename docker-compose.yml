@@ -12,7 +12,7 @@ services:
             MYSQL_ROOT_PASSWORD: password
             MYSQL_ROOT_HOST: '%'
 
-        build: db/
+        build: src/data
         ports:
             - 3306:3306
         networks:
