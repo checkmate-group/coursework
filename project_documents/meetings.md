@@ -70,6 +70,14 @@ We purely set up this meeting to discuss some of the issues that we made so we c
 ## 04/03/2022 - Update meeting (30 minutes)
 Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proofread everything we have done and make sure our project backlog had been updated with all the necessary information.
 
+## 08/03/2022 - Update meeting (120 minutes)
+We all set up a meeting to ensure that we had everything covered for sprint 2, just adding the finishing touches and reviewing the next steps for sprint 3. This was us coming together, looking at the project as a whole team, and overviewing everything.
+
+[@ZOulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
+[@archeris32](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
+[@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
+[Mohammed Kaizra](https://github.com/KezzyRk) - Review the meetings document
+
 # Group Members
 * [Zakariya Oulhadj](https://github.com/ZOulhadj)
 * [Taylor Head](https://github.com/Nero-DevOps)
