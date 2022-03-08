@@ -42,6 +42,7 @@ Examples of conduct that may lead to disciplinary action:
 * Misuse or unauthorised use of group's resources, including taking/manipulating/sharing of code without group's approval
 * Missing more than 2 deadlines in a row 
 * Missing weekly meetings (missing 2 meetings in a row will lead to diciplinary action)
+* Late to the meetings (More than 2 minutes late will lead to disciplinary action).
 
 ## Enforcement responsibilities
 The group has the authority to establish procedures and impose disciplinary action on a student 
