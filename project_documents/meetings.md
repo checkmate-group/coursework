@@ -43,7 +43,7 @@ Due to health issues such as COVID-19 and others so we decided that this week we
 ## 21/02/2022 - Checking each others work (45 minutes)
 After a 1 week break, we came back to discuss the work. During this meeting we assigned tasks to a few members of the group.
 
-[@ZOulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create Abous Us page and use of Personas
+[@ZOulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create About Us page and use of Personas
 [@archeris32](https://github.com/archeris32) - Use case diagram & Continue with the development 
 [@Nero-DevOps](https://github.com/Nero-DevOps) - Continue developing the base
 
@@ -56,7 +56,7 @@ This meeting was to conclude what is needed for sprint two and discuss the steps
 
 ## 28/02/2022 - Update meeting (50 minutes)
 We have a video call on our Discord group. Everyone shares their ideas about how to improve the WebApp. 
-[@ZOulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/).We find it really helpful.
+[@ZOulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/). We find it really helpful.
 
 ## 01/03/2022 - Update meeting (160 minutes)
 We had a very long meeting to discuss how we could connect the front and back end, which was a very challenging task. After many hard hours, we managed to get this done, and we pushed a commit to get everything working after this started pushing issues and sorting each bug one by one.
@@ -68,7 +68,7 @@ We discussed how to keep GitHub very clean by ensuring we have the correct file 
 We purely set up this meeting to discuss some of the issues that we made so we could discuss them as a team and work on them as a group which we all did. Next, we discussed the operational base of the project and started to plan out the strategy so we could meet all the specifications and make sure everything was fulfilled. 
 
 ## 04/03/2022 - Update meeting (30 minutes)
-Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proofread everything we have done and make sure our project backlog had been updated with all the necessary information.
+Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proof read everything we have done and make sure our project backlog had been updated with all the necessary information.
 
 ## 08/03/2022 - Update meeting (120 minutes)
 We all set up a meeting to ensure that we had everything covered for sprint 2, just adding the finishing touches and reviewing the next steps for sprint 3. This was us coming together, looking at the project as a whole team, and overviewing everything.
