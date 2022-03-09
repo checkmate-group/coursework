@@ -1,4 +1,4 @@
-#
+# This will be the first instruction that will initialize a new build stage for the base image
 FROM node:16
 
 #
