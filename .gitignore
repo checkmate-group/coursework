@@ -1,8 +1,4 @@
 node_modules/
 
-# latex files
-*.aux
-*.bbl
-*.blg
-*.log
-*.toc
+# ignores Word auto-save files
+~$*.docx
