@@ -1,3 +1,4 @@
+# ignores node cache files 
 node_modules/
 
 # ignores Word auto-save files
