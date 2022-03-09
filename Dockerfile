@@ -22,4 +22,5 @@ COPY . .
 # The instruction informs Docker that the container listens on the specified network port
 EXPOSE 3000
 
+# provide defaults for an executing container
 CMD [ "npm", "start" ]
