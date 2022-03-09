@@ -19,6 +19,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+# The instruction informs Docker that the container listens on the specified network port
 EXPOSE 3000
 
 CMD [ "npm", "start" ]
