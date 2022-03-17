@@ -556,14 +556,13 @@ router.get('/population_in_out_cities_by_continent',(req,res)=>{
 
 
 
-            if(!err)
-            {
-                res.render('population_inout_by_continent',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
+                
             }
+
+                res.render("viewer",  { name: "population_inout_by_continent",{data});
         });
     });
 });
@@ -578,14 +577,13 @@ router.get('/population_in_out_cities_by_region',(req,res)=>{
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('population_inout_by_region',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
+                
             }
+
+               res.render("viewer",  { name: "population_inout_by_region",{data});
         });
     });
 });
@@ -600,15 +598,13 @@ router.get('/population_in_out_cities_by_country',(req,res)=>{
 
             connection.release();
 
-            if(!err)
-            {
-                res.render('population_inout_by_country',{data});
-            }
-            else
-            {
+            if (err) {
                 console.log("error");
+                return;
+                
             }
-        });
+            
+                res.render("viewer",  { name: "population_inout_by_country",{data});
     });
 });
 
