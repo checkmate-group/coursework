@@ -590,4 +590,26 @@ router.get('/population_in_out_cities_by_region',(req,res)=>{
     });
 });
 
+router.get('/population_in_out_cities_by_country',(req,res)=>{
+
+    pool.getConnection((err,connection)=>{
+
+        let query = "select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.name as country from country co,city ci where co.code = ci.countryCode group by co.name"
+
+        connection.query(query,(err,data)=>{
+
+            connection.release();
+
+            if(!err)
+            {
+                res.render('population_inout_by_country',{data});
+            }
+            else
+            {
+                console.log("error");
+            }
+        });
+    });
+});
+
 module.exports = router;
