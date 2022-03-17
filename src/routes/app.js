@@ -605,6 +605,7 @@ router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
             }
 
                 res.render("viewer",  { name: "population_inout_by_country", data });
+        });
     });
 });
 
