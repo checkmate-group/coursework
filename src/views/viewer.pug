@@ -25,6 +25,9 @@ block content
                     option(value="15") Country population
                     option(value="16") Continent population
                     option(value="17") City population
+                    option(value="18") Population of people, people living in cities, and people not living in cities in each continent
+                    option(value="19") The population of people, people living in cities, and people not living in cities in each region
+                    option(value="20") The population of people, people living in cities, and people not living in cities in each country
                     
             div(class="d-flex justify-content-center")
                 a(class="btn btn-primary m-2 w-25" id="view-table-button" href="#" role="button") View Report
@@ -69,6 +72,12 @@ block content
                 include layouts/tables/world_capital_cities_by_population_in_region
             else if name == "world_capital_cities_by_population_in_continent"
                 include layouts/tables/world_capital_cities_by_population_in_continent
+            else if name == "population_inout_by_continent"
+                include layouts/tables/population_inout_by_continent
+            else if name == "population_inout_by_country"
+                include layouts/tables/population_inout_by_country
+            else if name == "population_inout_by_region"
+                include layouts/tables/population_inout_by_region
 
 block scripts 
     script(src="/js/view_table.js")
