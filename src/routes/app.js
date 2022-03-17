@@ -562,7 +562,7 @@ router.get('/viewer/population_in_out_cities_by_continent',(req,res)=>{
                 
             }
 
-                res.render("viewer",  { name: "population_inout_by_continent",{data});
+                res.render("viewer",  { name: "population_inout_by_continent", data });
         });
     });
 });
@@ -583,7 +583,7 @@ router.get('/viewer/population_in_out_cities_by_region',(req,res)=>{
                 
             }
 
-               res.render("viewer",  { name: "population_inout_by_region",{data});
+               res.render("viewer",  { name: "population_inout_by_region", data });
         });
     });
 });
@@ -604,7 +604,7 @@ router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
                 
             }
 
-                res.render("viewer",  { name: "population_inout_by_country",{data});
+                res.render("viewer",  { name: "population_inout_by_country", data });
     });
 });
 
