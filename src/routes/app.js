@@ -544,7 +544,7 @@ router.get("/viewer/population_languages", (req, res) => {
 
 // population in and out of cities
 
-router.get('/population_in_out_cities_by_continent',(req,res)=>{
+router.get('/viewer/population_in_out_cities_by_continent',(req,res)=>{
 
     pool.getConnection((err,connection)=>{
 
@@ -567,7 +567,7 @@ router.get('/population_in_out_cities_by_continent',(req,res)=>{
     });
 });
 
-router.get('/population_in_out_cities_by_region',(req,res)=>{
+router.get('/viewer/population_in_out_cities_by_region',(req,res)=>{
 
     pool.getConnection((err,connection)=>{
 
@@ -588,7 +588,7 @@ router.get('/population_in_out_cities_by_region',(req,res)=>{
     });
 });
 
-router.get('/population_in_out_cities_by_country',(req,res)=>{
+router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
 
     pool.getConnection((err,connection)=>{
 
@@ -603,7 +603,7 @@ router.get('/population_in_out_cities_by_country',(req,res)=>{
                 return;
                 
             }
-            
+
                 res.render("viewer",  { name: "population_inout_by_country",{data});
     });
 });
