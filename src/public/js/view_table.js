@@ -67,6 +67,15 @@ viewTableButton.addEventListener("click", e => {
         case 17:
             window.location.href = "/viewer/city_population/";
             break; 
+        case 18:
+            window.location.href = "/viewer/population_in_out_cities_by_continent/";
+            break; 
+        case 19:
+            window.location.href = "/viewer/population_in_out_cities_by_country/";
+            break;
+        case 20:
+            window.location.href = "/viewer/population_in_out_cities_by_region/";
+            break;
         default:
             window.location.href = "404";
             break;
