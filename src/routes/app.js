@@ -4,7 +4,7 @@ const router = express.Router();
 
 // config the database connection
 const pool = mysql.createPool({
-    host: "172.18.0.1",
+    host: "172.20.0.1",
     port: "3306",
     user: "root",
     password: "password",
@@ -525,7 +525,7 @@ router.get("/viewer/population_languages", (req, res) => {
 
     pool.getConnection((err, connection) => {
 
-        let query = "select sum(co.population) as population,cl.language as language from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language order by population desc"
+        let query = "select sum(co.population) as population,cl.language as language from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language order by population desc";
 
         connection.query(query, (err, data) => {
 
@@ -541,5 +541,74 @@ router.get("/viewer/population_languages", (req, res) => {
         });
     });
 });
+
+// population in and out of cities
+
+router.get('/viewer/population_in_out_cities_by_continent', (req, res) => {
+
+    pool.getConnection((err, connection) => {
+
+        let query = "select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.continent as continent from country co,city ci where co.code = ci.countryCode group by co.continent";
+
+        connection.query(query, (err, data) => {
+
+            connection.release();
+
+
+
+            if (err) {
+                console.log("error");
+                return;
+                
+            }
+
+            res.render("viewer",  { name: "population_inout_by_continent", data });
+        });
+    });
+});
+
+
+router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
+
+    pool.getConnection((err, connection)=>{
+
+        let query = "select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.name as country from country co,city ci where co.code = ci.countryCode group by co.name";
+
+        connection.query(query,(err,data)=>{
+
+            connection.release();
+
+            if (err) {
+                console.log("error");
+                return;
+                
+            }
+
+                res.render("viewer",  { name: "population_inout_by_country", data });
+        });
+    });
+});
+
+router.get('/viewer/population_in_out_cities_by_region', (req, res)=>{
+
+    pool.getConnection((err,connection)=>{
+
+        let query = "select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.region as region from country co,city ci where co.code = ci.countryCode group by co.region";
+
+        connection.query(query,(err,data)=>{
+
+            connection.release();
+
+            if (err) {
+                console.log("error");
+                return;
+                
+            }
+
+            res.render("viewer",  { name: "population_inout_by_region", data });
+        });
+    });
+});
+
 
 module.exports = router;
