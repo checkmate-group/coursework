@@ -82,7 +82,7 @@ We all set up a meeting to ensure that we had everything covered for sprint 2, j
 * [Zakariya Oulhadj](https://github.com/ZOulhadj)
 * [Taylor Head](https://github.com/Nero-DevOps)
 * [Samoil-Bogdan Adascalului](https://github.com/archeris32)
-* [Mohammed Kaizra](https://github.com/KezzyRk)
+* [Mohamed Kaizra](https://github.com/KezzyRk)
 
 # Code of Conduct
 The principles stated in our group's ([Code of Coduct](coursework/CODE_OF_CONDUCT.md)) were respected during this meetings.
