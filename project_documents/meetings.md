@@ -78,6 +78,15 @@ We all set up a meeting to ensure that we had everything covered for sprint 2, j
 [@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
 [Mohamed Kaizra](https://github.com/KezzyRk) - Review the meetings document
 
+## 21/03/2022 - Update meeting (60 minutes)
+We set up a meeting last night to iron out the details for what we need to do for sprint 3 and assigning each of the group members their tasks, we also looked at a few ways we can tackle some of the issues that were made.
+
+[@ZOulhadj](https://github.com/ZOulhadj) - Working on UI and also backend
+[@archeris32](https://github.com/archeris32) - Working on a log-in system
+[@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the database
+[Mohamed Kaizra](https://github.com/KezzyRk) - Working on UI and pages and reviewing meetings document
+
+
 # Group Members
 * [Zakariya Oulhadj](https://github.com/ZOulhadj)
 * [Taylor Head](https://github.com/Nero-DevOps)
