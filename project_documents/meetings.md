@@ -76,7 +76,7 @@ We all set up a meeting to ensure that we had everything covered for sprint 2, j
 [@ZOulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
 [@archeris32](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
 [@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
-[Mohammed Kaizra](https://github.com/KezzyRk) - Review the meetings document
+[Mohamed Kaizra](https://github.com/KezzyRk) - Review the meetings document
 
 # Group Members
 * [Zakariya Oulhadj](https://github.com/ZOulhadj)
