@@ -1,6 +1,7 @@
 networks:   
     app-tier:
         driver: bridge
+
 # This will create the database image along with its element inside the container, which is split from the web image.         
 services:
     db:
@@ -18,6 +19,7 @@ services:
         networks:
             - app-tier 
         container_name: database
+
 # This will create the web image along with its element inside the container, which is split from the database image.
     web:
         image: webapp
