@@ -30,8 +30,7 @@ Examples of conduct that promotes a constructive environment:
 The group considers the form of inappropriate conduct that are set out below to constitute 
 misconduct that is likely to lead to disciplinary action. The list shouldn't be considered exhaustive.
 
-Examples of conduct that may lead to disciplinary action:
-	
+Examples of conduct that may lead to disciplinary action:	
 * Public or private harassment
 * Plagiarism/Duplication/Falsification/Cheating
 * Collusion
