@@ -43,10 +43,14 @@ router.get("/about/bogdan", (req, res) => {
     return res.render("about/bogdan", { name: "bogdan" });
 });
 
+router.get("/features", (req, res) => {
+    return res.render("features");
+});
 
 router.get("/register", (req, res) => {
     return res.render("register");
 });
+
 router.get("/contact", (req, res) => {
     return res.render("contact");
 });
