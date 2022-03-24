@@ -8,13 +8,18 @@
     background: linear-gradient(to right, rgb(8, 68, 166), rgb(16, 67, 178));
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+
+
+
+
+
+
 
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     bottom: 3rem;
