@@ -1,6 +1,20 @@
 extends layouts/main
 
 block content
+    div(class="d-flex justify-content-center align-items-center bg-dark text-secondary px-4 py-5 text-center vh-100" id="landing" bis_skin_checked="1")
+        div(class="py-5" bis_skin_checked="1")
+            h1(class="display-1 text-white landing-title") Database Viewer    
+            div(class="col-lg-6 mx-auto" bis_skin_checked="1")
+                p(class="text-white fs-5 mb-4") 
+                 | This is the Checkmate group database viewer. 
+                 | The site make use of multiple technologies that display
+                 | databse data onto the site.
+
+                div(class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1")
+                    a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
+                     | Dashboard
+
+
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" bis_skin_checked="1">
         <div class="carousel-indicators" bis_skin_checked="1">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -52,17 +66,3 @@ block content
         </button>
     </div>
 
-    div(class="bg-dark text-secondary px-4 py-5 text-center" bis_skin_checked="1")
-        div(class="py-5" bis_skin_checked="1")
-            h1(class="display-5 fw-bold text-white") Database Viewer    
-            div(class="col-lg-6 mx-auto" bis_skin_checked="1")
-                p(class="fs-5 mb-4") 
-                 | This is the Checkmate group database viewer. 
-                 | The site make use of multiple technologies that display
-                 | databse data onto the site.
-
-                div(class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1")
-                    a(class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="/viewer" role="button") 
-                     | Create
-                    a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
-                     | Login
