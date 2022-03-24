@@ -22,9 +22,28 @@ router.get("/login", (req, res) => {
 router.get("/viewer", (req, res) => {
     return res.render("viewer");
 });
+
 router.get("/about", (req, res) => {
     return res.render("about");
 });
+
+router.get("/about/zakariya", (req, res) => {
+    return res.render("about/zakariya", { name: "zakariya" });
+});
+
+router.get("/about/taylor", (req, res) => {
+    return res.render("about/taylor", { name: "taylor" });
+});
+
+router.get("/about/kezzy", (req, res) => {
+    return res.render("about/kezzy", { name: "kezzy" });
+});
+
+router.get("/about/bogdan", (req, res) => {
+    return res.render("about/bogdan", { name: "bogdan" });
+});
+
+
 router.get("/register", (req, res) => {
     return res.render("register");
 });
