@@ -5,18 +5,18 @@
 ## 21/03/2022 - Update meeting (60 minutes)
 We set up a meeting last night to iron out the details for what we need to do for sprint 3 and assigning each of the group members their tasks, we also looked at a few ways we can tackle some of the issues that were made.
 
-[@ZOulhadj](https://github.com/ZOulhadj) - Working on UI and also backend
-[@archeris32](https://github.com/archeris32) - Working on a log-in system
-[@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the database
-[Mohamed Kaizra](https://github.com/KezzyRk) - Working on UI and pages and reviewing meetings document
+* [@ZOulhadj](https://github.com/ZOulhadj) - Working on UI and also backend
+* [@archeris32](https://github.com/archeris32) - Working on a log-in system
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the database
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Working on UI and pages and reviewing meetings document
 
 ## 08/03/2022 - Update meeting (120 minutes)
 We all set up a meeting to ensure that we had everything covered for sprint 2, just adding the finishing touches and reviewing the next steps for sprint 3. This was us coming together, looking at the project as a whole team, and overviewing everything.
 
-[@ZOulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
-[@archeris32](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
-[@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
-[Mohamed Kaizra](https://github.com/KezzyRk) - Review the meetings document
+* [@ZOulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
+* [@archeris32](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Review the meetings document
 
 ## 04/03/2022 - Update meeting (30 minutes)
 Today's meeting discussed that we have everything in place for submission and that we have covered everything to get the best possible grade. It was only a short meeting but was just to proof read everything we have done and make sure our project backlog had been updated with all the necessary information.
@@ -48,9 +48,9 @@ and new information that we recevied during today's class.
 ## 21/02/2022 - Checking each others work (45 minutes)
 After a 1 week break, we came back to discuss the work. During this meeting we assigned tasks to a few members of the group.
 
-[@ZOulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create About Us page and use of Personas
-[@archeris32](https://github.com/archeris32) - Use case diagram & Continue with the development 
-[@Nero-DevOps](https://github.com/Nero-DevOps) - Continue developing the base
+* [@ZOulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create About Us page and use of Personas
+* [@archeris32](https://github.com/archeris32) - Use case diagram & Continue with the development 
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Continue developing the base
 
 ## 14/02/22 - Meeting canceled
 Due to health issues such as COVID-19 and others so we decided that this week we will postpone the meeting. Everyone should simply continue with their work.
