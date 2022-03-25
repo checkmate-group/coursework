@@ -1,3 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.landing-title {
+    /* font-family: 'Work Sans', sans-serif; */
+}
+
+#landing {
+    background: linear-gradient(to right, rgb(8, 68, 166), rgb(16, 67, 178));
+}
+
+
+
+
+
+
+
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
 .form-signin {
     width: 100%;
     max-width: 330px;
@@ -25,3 +71,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+
+
+

@@ -1,3 +1,4 @@
+const path      = require("path");
 const express   = require("express");
 const routes    = require("./src/routes/app");
 
@@ -8,6 +9,9 @@ app.use(express.static("./src/public"));
 
 app.set("view engine", "pug");
 app.set("views", "./src/views");
+
+// set base path for relative pug template extends
+app.locals.basedir = path.join(__dirname, "src/views");
 
 app.use("/", routes);
 

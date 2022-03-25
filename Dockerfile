@@ -1,5 +1,7 @@
+# This will be the first instruction that will initialize a new build stage for the base image
 FROM node:16
 
+# This instruction sets the working directory for the project
 WORKDIR /src
 
 # Install app dependencies
@@ -17,6 +19,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+# The instruction informs Docker that the container listens on the specified network port
 EXPOSE 3000
 
+# provide defaults for an executing container
 CMD [ "npm", "start" ]
