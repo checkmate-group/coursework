@@ -1,8 +1,10 @@
 networks:   
     app-tier:
         driver: bridge
-        
+      
 services:
+
+# This will create the database image along with its element inside the container, which is split from the web image.   
     db:
         image: database
         command: --default-authentication-plugin=mysql_native_password
@@ -19,6 +21,7 @@ services:
             - app-tier 
         container_name: database
 
+# This will create the web image along with its element inside the container, which is split from the database image.
     web:
         image: webapp
         build: .
