@@ -23,7 +23,7 @@ As a < user role >, I can < activity > so that < business value >.
 | 7	| Sprint 3|As user i would like to see a section in the app with all the technologies used to develop 	|  Medium	| 6 hours 	|Develop another sectio in navbar  "Features" and write a few info about each 	|  release 0.3	| [Zakariya Oulhadj](https://github.com/ZOulhadj) 	|  	
 | 8	| Sprint 3|As product owner i would like the "about us" section to be improved with photos for each member  	|  Medium	| 8 hours 	| Improve the section with photos and a few details about each member 	|  release 0.3	| [Zakariya Oulhadj](https://github.com/ZOulhadj) & [Mohammed Kaizra](https://github.com/KezzyRk) &  [Taylor Head](https://github.com/Nero-DevOps) & [Samoil-Bogdan Adascalului](https://github.com/archeris32)	|  
 | 9	| Sprint 4|As product owner i would like the app to have a login feature 	|  High	| 1 week 	| Research about the login forms and how to authorize a login	|  release 0.4	| [Zakariya Oulhadj](https://github.com/ZOulhadj) &  [Samoil-Bogdan Adascalului](https://github.com/archeris32)	| 
-| 10| Sprint 3|As product owner i would like for some unit testing to be implement to check components  	|  High	| 1 week 	| Research unit testing and the implementation	|  release 0.3	| [Zakariya Oulhadj](https://github.com/ZOulhadj) 	| 
+| 10| Sprint 3|As product owner i would like for some unit testing to be implement to check components |  High	| 1 week 	| Research unit testing and the implementation	|  release 0.3	| [Zakariya Oulhadj](https://github.com/ZOulhadj) 	| 
 
 
 
