@@ -18,7 +18,7 @@ providing a method to create, read, update, and delete data from a web site to a
 * [@KezzyRk](https://github.com/KezzyRk)
 
 
-![](.git_assets/gource.gif "Group Work")
+![](.git_assets/repo_overview.png "Group Work")
 
 
 # Wiki
