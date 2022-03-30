@@ -2,10 +2,18 @@
 
 ![](/.git_assets/logo.png "Logo")
 
+## 30/03/2022 - Update meeting (45 minutes)
+We called this meeting to prepare for our presentation to organise the best we can be and follow up with working on issues and other works loads connected to sprint 4.
+
+* [@ZOulhadj](https://github.com/ZOulhadj) - Preparing workloads and implementing a plan for sprint 4.
+* [@archeris32](https://github.com/archeris32) - Working on Security features of the site
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Working on user inputs for reports and added functionality of entering data via the website into the database  
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Updating the project broard
+
 ## 25/03/2022 - Update meeting (75 minutes)
 This meeting was to check everything was in place for submission and to review GitHub. And ensure all documentation and issues have been checked.
 
-* [@ZOulhadj](https://github.com/ZOulhadj) - working on frontend and TravisCI
+* [@ZOulhadj](https://github.com/ZOulhadj) - Working on frontend and TravisCI
 * [@archeris32](https://github.com/archeris32) - Working on Documentation and frontend
 * [@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the reports and backend
 * [Mohamed Kaizra](https://github.com/KezzyRk) - Reviewing documentation and looking for issues
