@@ -2,6 +2,14 @@
 
 ![](/.git_assets/logo.png "Logo")
 
+## 25/03/2022 - Update meeting (75 minutes)
+This meeting was to check everything was in place for submission and to review GitHub. And ensure all documentation and issues have been checked.
+
+* [@ZOulhadj](https://github.com/ZOulhadj) - working on frontend and TravisCI
+* [@archeris32](https://github.com/archeris32) - Working on Documentation and frontend
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the reports and backend
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Reviewing documentation and looking for issues
+
 ## 21/03/2022 - Update meeting (60 minutes)
 We set up a meeting last night to iron out the details for what we need to do for sprint 3 and assigning each of the group members their tasks, we also looked at a few ways we can tackle some of the issues that were made.
 
