@@ -54,6 +54,9 @@ router.get("/register", (req, res) => {
 router.get("/contact", (req, res) => {
     return res.render("contact");
 });
+router.get("/nodeJS", (req, res) => {
+    return res.render("nodeJS");
+});
 
 router.get("/viewer/world_countries_by_population", (req, res) => {
     pool.getConnection((err, connection) => {
