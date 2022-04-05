@@ -10,12 +10,28 @@ body {
     /* font-family: 'Work Sans', sans-serif; */
 }
 
-#landing {
-    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/64/80/UiTjBI.jpg");
-    background-repeat: no-repeat;
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+  }
   
-}
-
+ 
+.content {
+    background-color: lighten(#0074d9, 20);
+    opacity: .85;
+    padding: 20px;
+    color: rgba(255,255,255,.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
 /* Carousel base class */
 .carousel {

@@ -1,19 +1,22 @@
 extends layouts/main
 
 block content
-    div(class="d-flex justify-content-center align-items-center bg-dark text-secondary px-4 py-5 text-center vh-100" id="landing" bis_skin_checked="1")
-        div(class="py-5" bis_skin_checked="1")
-            h1(class="display-1 text-white landing-title") Database Viewer    
-            div(class="col-lg-6 mx-auto" bis_skin_checked="1")
+    <div class="parent center ">
+        <video autoplay muted loop>
+            <source src="/images/earth.mp4" type="video/mp4" />
+        </video>
+        
+            <div class="content align-items-center text-center">
+                h1(class="display-1 text-white landing-title") Database Viewer  
                 p(class="text-white fs-5 mb-4") 
-                 | This is the Checkmate group database viewer. 
-                 | The site make use of multiple technologies that display
-                 | databse data onto the site.
-
-                div(class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1")
-                    a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
-                     | Dashboard
-
+                    | This is the Checkmate group database viewer. 
+                    | The site make use of multiple technologies that display
+                    | databse data onto the site.
+                
+                a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
+                        | Dashboard
+            </div>
+               
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" bis_skin_checked="1">
         <div class="carousel-indicators" bis_skin_checked="1">
