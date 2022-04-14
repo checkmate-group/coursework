@@ -4,7 +4,7 @@ const router = express.Router();
 
 // config the database connection
 const pool = mysql.createPool({
-    host: "172.20.0.1",
+    host: "172.18.0.4",
     port: "3306",
     user: "root",
     password: "password",
@@ -26,6 +26,10 @@ router.get("/viewer", (req, res) => {
 router.get("/about", (req, res) => {
     return res.render("about");
 });
+router.get("/FAQ", (req, res) => {
+    return res.render("FAQ");
+});
+
 
 router.get("/about/zakariya", (req, res) => {
     return res.render("about/zakariya", { name: "zakariya" });
