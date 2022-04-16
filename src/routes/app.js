@@ -2,6 +2,26 @@ const express = require('express');
 const mysql = require('mysql2');
 const router = express.Router();
 
+
+// TypeError: /src/src/views/layouts/tables/world_capital_cities_by_population.pug:9
+// 7|     tbody
+// 8|         tr(class="rows")
+// > 9|             td= city.Name 
+// 10|             td= city.Country                   
+// 11|             td= city.Population
+
+// Cannot read properties of undefined (reading 'Name')
+// at eval (eval at wrap (/src/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:1992:62)
+// at template (eval at wrap (/src/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:2551:7)
+// at Object.exports.renderFile (/src/node_modules/pug/lib/index.js:454:38)
+// at Object.exports.renderFile (/src/node_modules/pug/lib/index.js:444:21)
+// at View.exports.__express [as engine] (/src/node_modules/pug/lib/index.js:493:11)
+// at View.render (/src/node_modules/express/lib/view.js:135:8)
+// at tryRender (/src/node_modules/express/lib/application.js:640:10)
+// at Function.render (/src/node_modules/express/lib/application.js:592:3)
+// at ServerResponse.render (/src/node_modules/express/lib/response.js:1008:7)
+// at Query.onResult (/src/src/routes/app.js:506:17)
+
 const reports = [
     {
         title: "World Population",
@@ -9,14 +29,12 @@ const reports = [
     },
     {
         title: "World countries by population",
-        page: "world_counties_by_population"
+        page: "world_countries_by_population"
     },
     {
         title: "World countires by population in region",
         page: "world_countries_by_population_in_region"
     },
-
-
     {
         title: "World countires by population in continent",
         page: "world_countries_by_population_in_continent"
@@ -678,7 +696,7 @@ router.get('/viewer/population_in_out_cities_by_continent', (req, res) => {
                 
             }
 
-            res.render("viewer",  { name: "population_inout_by_continent", reports, data });
+            res.render("viewer",  { name: "population_in_out_cities_by_continent", reports, data });
         });
     });
 });
@@ -700,7 +718,7 @@ router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
                 
             }
 
-                res.render("viewer",  { name: "population_inout_by_country", reports, data });
+                res.render("viewer",  { name: "population_in_out_cities_by_country", reports, data });
         });
     });
 });
@@ -721,7 +739,7 @@ router.get('/viewer/population_in_out_cities_by_region', (req, res)=>{
                 
             }
 
-            res.render("viewer",  { name: "population_inout_by_region", reports, data });
+            res.render("viewer",  { name: "population_in_out_cities_by_region", reports, data });
         });
     });
 });

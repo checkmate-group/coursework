@@ -7,32 +7,9 @@ block content
         form(class="mb-5")
             div(class="d-flex")
                 select(class="form-select m-2" id="view-select" aria-label="Database views")
-
                     each val, index in reports 
                         option(value=index selected=(name == val.page))= val.title
                         
-                    //- option(value="0") World population
-                    //- option(value="1") World countries by population
-                    //- option(value="2") World countries by population in region
-                    //- option(value="3") World countries by population in continent
-                    //- option(value="4") World cities by population
-                    //- option(value="5") World cities by population in region
-                    //- option(value="6") World cities by population in district
-                    //- option(value="7") World cities by population in country
-                    //- option(value="8") World cities by population in continent
-                    //- option(value="9") World capital cities by population
-                    //- option(value="10") World capital cities by population in region
-                    //- option(value="11") World capital cities by population in continent
-                    //- option(value="12") Region population
-                    //- option(value="13") Population languages
-                    //- option(value="14") District population
-                    //- option(value="15") Country population
-                    //- option(value="16") Continent population
-                    //- option(value="17") City population
-                    //- option(value="18") Population of people, people living in cities, and people not living in cities in each continent
-                    //- option(value="19") The population of people, people living in cities, and people not living in cities in each region
-                    //- option(value="20") The population of people, people living in cities, and people not living in cities in each country
-                    
             div(class="d-flex justify-content-center")
                 a(class="btn btn-primary m-2 w-25" id="view-table-button" href="#" role="button") View Report
 
@@ -42,9 +19,7 @@ block content
                 h2(class="text-muted fw-bold" id="view-header") Table name
 
             //- Display a different table based on which view we want
-            //- each val, index in reports
-            //-     if name == val.page
-            //-         include layouts/tables/val.page
+            //- TODO: is it possible to have a loop similar to the one above?
             
             if name == "world_population"
                 include layouts/tables/world_population
@@ -72,6 +47,8 @@ block content
                 include layouts/tables/world_cities_by_population_in_region
             else if name == "world_cities_by_population_in_district"
                 include layouts/tables/world_cities_by_population_in_district
+            else if name == "world_cities_by_population_in_country"
+                include layouts/tables/world_cities_by_population_in_country
             else if name == "world_cities_by_population_in_continent"
                 include layouts/tables/world_cities_by_population_in_continent
             else if name == "world_capital_cities_by_population"
@@ -80,12 +57,12 @@ block content
                 include layouts/tables/world_capital_cities_by_population_in_region
             else if name == "world_capital_cities_by_population_in_continent"
                 include layouts/tables/world_capital_cities_by_population_in_continent
-            else if name == "population_inout_by_continent"
-                include layouts/tables/population_inout_by_continent
-            else if name == "population_inout_by_country"
-                include layouts/tables/population_inout_by_country
-            else if name == "population_inout_by_region"
-                include layouts/tables/population_inout_by_region
+            else if name == "population_in_out_cities_by_continent"
+                include layouts/tables/population_in_out_by_continent
+            else if name == "population_in_out_cities_by_country"
+                include layouts/tables/population_in_out_by_country
+            else if name == "population_in_out_cities_by_region"
+                include layouts/tables/population_in_out_by_region
 
 block scripts 
     script(src="/js/view_table.js")

@@ -5,12 +5,6 @@ const table             = document.getElementById("table");
 
 // view report button
 viewTableButton.addEventListener("click", e => {
-    // toggle table from hidden to visible
-    // table.classList = "d-block";
-
-    // set the table header name baased on the currently selected option from the menu
-    // viewTableHeader.innerText = viewTableDropdown.options[viewTableDropdown.selectedIndex].text;
-
     // redirect to specific sub-view that is handled by express.js
     switch(viewTableDropdown.selectedIndex) {
         case 0:
