@@ -1,19 +1,22 @@
 extends layouts/main
 
 block content
-    div(class="d-flex justify-content-center align-items-center bg-dark text-secondary px-4 py-5 text-center vh-100" id="landing" bis_skin_checked="1")
-        div(class="py-5" bis_skin_checked="1")
-            h1(class="display-1 text-white landing-title") Database Viewer    
-            div(class="col-lg-6 mx-auto" bis_skin_checked="1")
+    <div class="parent center ">
+        <video autoplay muted loop>
+            <source src="/images/earth.mp4" type="video/mp4" />
+        </video>
+        
+            <div class="content align-items-center text-center">
+                h1(class="display-1 text-white landing-title") Database Viewer  
                 p(class="text-white fs-5 mb-4") 
-                 | This is the Checkmate group database viewer. 
-                 | The site make use of multiple technologies that display
-                 | databse data onto the site.
-
-                div(class="d-grid gap-2 d-sm-flex justify-content-sm-center" bis_skin_checked="1")
-                    a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
-                     | Dashboard
-
+                    | This is the Checkmate group database viewer. 
+                    | The site make use of multiple technologies that display
+                    | databse data onto the site.
+                
+                a(class="btn btn-outline-light btn-lg px-4" href="/login" role="button") 
+                        | Dashboard
+            </div>
+               
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" bis_skin_checked="1">
         <div class="carousel-indicators" bis_skin_checked="1">
@@ -23,13 +26,13 @@ block content
         </div>
         <div class="carousel-inner" bis_skin_checked="1">
             <div class="carousel-item" bis_skin_checked="1">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <img src="https://thegeoict.com/wp-content/uploads/2019/08/cropped-earthday_day_lrg.jpg" alt=”an artist's rendition of a black hole in space”>
 
                 <div class="container" bis_skin_checked="1">
                 <div class="carousel-caption text-start" bis_skin_checked="1">
                     <h1>Example headline.</h1>
                     <p>Some representative placeholder content for the first slide of the carousel.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="/register">Sign up today</a></p>
                 </div>
                 </div>
             </div>
@@ -65,4 +68,3 @@ block content
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
