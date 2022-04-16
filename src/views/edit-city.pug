@@ -1,0 +1,25 @@
+extends layouts/main
+block content
+
+   div(class="container")
+        h1(class="p-2") Update Database Viewer
+
+        form(class="mb-5" method="post", action=`/edit-city/${JSON.stringify(data)}`)
+         
+            div(class="d-flex justify-content-center")
+                input(type='text' name='name' id='country-name' class="form-control m-2" value=data.Name)
+            
+            div(class="d-flex justify-content-center")
+                input(type='text' name='countryCode' id='countryCode' class="form-control m-2" value=data.CountryCode )
+
+            div(class="d-flex justify-content-center")
+                input(type='text' name='district' id='district' class="form-control m-2" value=data.District  )
+             
+            div(class="d-flex justify-content-center")
+                input(type='text' name='population' id='population' class="form-control m-2" value=data.Population )
+
+            div(class="d-flex justify-content-center")
+               input(type='submit', value='Update')
+
+    
+

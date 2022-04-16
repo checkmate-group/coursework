@@ -1,0 +1,36 @@
+extends layouts/main
+block content
+
+   div(class="container")
+        h1(class="p-2") ADD Database Viewer 
+        p #{success?"Record Added":"Not Added"}
+        form(class="mb-5" method="post", action="/add")
+         
+
+            div(class="d-flex justify-content-center")
+                input(type='text' name='code' id='code' class="form-control m-2" placeholder = "Enter Code"  )
+             
+            div(class="d-flex justify-content-center")
+                input(type='text' name='name' id='country-name' class="form-control m-2"  placeholder = "Enter Name"  )
+
+            div(class="d-flex justify-content-center")
+                input(type='text' name='region' id='region' class="form-control m-2"  placeholder = "Enter Region" )
+             
+            div(class="d-flex justify-content-center")
+                select(class="form-select m-2" id="continent" name="continent" aria-label="Database views")
+                    option(value="Asia" name='asia') Asia
+                    option(value="Europe" name='europe') Europe
+                    option(value="North America" name='north america') North America
+                    option(value="Africa" name='africa') Africa
+                    option(value="Oceania" name='oceania') Oceania
+                    option(value="Antarctica" name='antartica') Antarctica
+                    option(value="South America" name='south america') South America
+
+            div(class="d-flex justify-content-center")
+                input(type='number' name='population' id='population' class="form-control m-2"  placeholder = "Enter Population" )
+             
+            div(class="d-flex justify-content-center")
+                input(type='text' name='capital' id='capital' class="form-control m-2" placeholder = "Enter Capital" )
+
+            div(class="d-flex justify-content-center")
+               input(type='submit', value='Add')

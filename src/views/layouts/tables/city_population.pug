@@ -4,7 +4,10 @@ table(class="table")
             th City                 
             th Population 
     tbody
-        for cp in data
+        for cp,index in data
             tr
                 td= cp.city
                 td= cp.population
+                td
+                  a(href=`/edit-city/${JSON.stringify(data[index])}` class=`btn btn-primary` id=`edit-button`) 
+                   | Edit

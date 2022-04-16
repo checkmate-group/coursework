@@ -1,0 +1,22 @@
+extends layouts/main
+block content
+
+   div(class="container")
+        h1(class="p-2") ADD Database Viewer 
+        p #{success?"Record Added":"Not Added"}
+        form(class="mb-5" method="post", action="/add-city")
+         
+            div(class="d-flex justify-content-center")
+                input(type='text' name='name' id='country-name' class="form-control m-2"  placeholder = "Enter Name"  )
+
+            div(class="d-flex justify-content-center")
+                input(type='text' name='district' id='district' class="form-control m-2"  placeholder = "Enter district" )
+             
+            div(class="d-flex justify-content-center")
+                input(type='text' name='countryCode' id='countryCode' class="form-control m-2"  placeholder = "Enter country code" )
+             
+            div(class="d-flex justify-content-center")
+                input(type='number' name='population' id='population' class="form-control m-2"  placeholder = "Enter Population" )
+        
+            div(class="d-flex justify-content-center")
+               input(type='submit', value='Add')
