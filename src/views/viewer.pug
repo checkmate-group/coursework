@@ -58,11 +58,13 @@ block content
             else if name == "world_capital_cities_by_population_in_continent"
                 include layouts/tables/world_capital_cities_by_population_in_continent
             else if name == "population_in_out_cities_by_continent"
-                include layouts/tables/population_in_out_by_continent
+                include layouts/tables/population_in_out_cities_by_continent
             else if name == "population_in_out_cities_by_country"
-                include layouts/tables/population_in_out_by_country
+                include layouts/tables/population_in_out_cities_by_country
             else if name == "population_in_out_cities_by_region"
-                include layouts/tables/population_in_out_by_region
+                include layouts/tables/population_in_out_cities_by_region
+            else if name =='world_cities_by_population_in_country'
+                include layouts/tables/world_cities_by_population_in_country
 
 block scripts 
     script(src="/js/view_table.js")
