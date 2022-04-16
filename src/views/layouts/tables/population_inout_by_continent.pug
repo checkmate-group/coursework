@@ -4,9 +4,12 @@ table(class="table")
             th Conitnent                 
             th Population out of cities    
             th Population in cities    
-        for cp in data
+        for cp,index in data
             tr(class="rows")
                 td= cp.continent
                 td= cp.poutc                                                   
-                td= cp.pinc                                                   
+                td= cp.pinc 
+                td
+                 a(href=`/edit/${JSON.stringify(data[index])}` class=`btn btn-primary` id=`edit-button`) 
+                  | Edit                                                  
     br
