@@ -1,14 +1,24 @@
 for continent in continents
+    //- div(class="table-container")
+    //-     h2(class="table-head-title")= continent
+    //-     br
     table(class="table")
         thead
             tr
                 th Name 
-                th Country               
-                th Population 
-        tbody
-            for city in citiesInContinent
+                th CountryCode               
+                th District     
+                th Population   
+                th Continent
+        tbody  
+            for city,index in citiesInContinent
                 if city.Continent === continent
                     tr(class="rows")
                         td= city.Name 
-                        td= city.Country                   
-                        td= city.Population
+                        td= city.CountryCode               
+                        td= city.District     
+                        td= city.Population                  
+                        td= city.Continent
+                        td
+                          a(href=`/edit-city/${JSON.stringify(city)}` class=`btn btn-primary` id=`edit-button`) 
+                           | Edit
