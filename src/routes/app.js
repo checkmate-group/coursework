@@ -2,6 +2,95 @@ const express = require('express');
 const mysql = require('mysql2');
 const router = express.Router();
 
+const reports = [
+    {
+        title: "World Population",
+        page: "world_population"
+    },
+    {
+        title: "World countries by population",
+        page: "world_counties_by_population"
+    },
+    {
+        title: "World countires by population in region",
+        page: "world_countries_by_population_in_region"
+    },
+
+
+    {
+        title: "World countires by population in continent",
+        page: "world_countries_by_population_in_continent"
+    },
+    {
+        title: "World cities by population",
+        page: "world_cities_by_population"
+    },
+    {
+        title: "World cities by population in region",
+        page: "world_cities_by_population_in_region"
+    },
+    {
+        title: "World cities by population in district",
+        page: "world_cities_by_population_in_district"
+    },
+    {
+        title: "World cities by population in country",
+        page: "world_cities_by_population_in_country"
+    },
+    {
+        title: "World cities by population in continent",
+        page: "world_cities_by_population_in_continent"
+    },
+    {
+        title: "World capital cities by population",
+        page: "world_capital_cities_by_population"
+    },
+    {
+        title: "World capital cities by population in region",
+        page: "world_capital_cities_by_population_in_region"
+    },
+    {
+        title: "World capital cities by population in continent",
+        page: "world_capital_cities_by_population_in_continent"
+    },
+    {
+        title: "Region population",
+        page: "region_population"
+    },
+    {
+        title: "Population languages",
+        page: "population_languages"
+    },
+    {
+        title: "District population",
+        page: "district_population"
+    },
+    {
+        title: "Country population",
+        page: "country_population"
+    },
+    {
+        title: "Continent population",
+        page: "continent_population"
+    },
+    {
+        title: "City population",
+        page: "city_population"
+    },
+    {
+        title: "Population in and out of cities by continent",
+        page: "population_in_out_cities_by_continent"
+    },
+    {
+        title: "Population in and out of cities by country",
+        page: "population_in_out_cities_by_country"
+    },
+    {
+        title: "Population in and out of cities by region",
+        page: "population_in_out_cities_by_region"
+    },
+];
+
 // config the database connection
 const pool = mysql.createPool({
     host: "172.18.0.1",
@@ -20,7 +109,7 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/viewer", (req, res) => {
-    return res.render("viewer");
+    return res.render("viewer", { reports });
 });
 
 router.get("/about", (req, res) => {
@@ -67,11 +156,10 @@ router.get("/viewer/world_countries_by_population", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_countries_by_population", data});
+            res.render("viewer", { name: "world_countries_by_population", reports, data});
         });
     });  
 });
-
 
 router.get('/viewer/world_countries_by_population_in_region', (req, res) => {
 
@@ -105,11 +193,10 @@ router.get('/viewer/world_countries_by_population_in_region', (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_countries_by_population_in_region", regions, countriesInRegion });
+            res.render("viewer", { name: "world_countries_by_population_in_region", reports, regions, countriesInRegion });
         });
     });
 });
-
 
 router.get("/viewer/world_countries_by_population_in_continent", (req, res) => {
     pool.getConnection((err, connection) => {
@@ -141,7 +228,7 @@ router.get("/viewer/world_countries_by_population_in_continent", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_countries_by_population_in_continent", continents, countriesInContinent });
+            res.render("viewer", { name: "world_countries_by_population_in_continent", reports, continents, countriesInContinent });
 
         });
     });
@@ -164,7 +251,7 @@ router.get("/viewer/world_cities_by_population", (req, res) => {
                 return;         
             }
 
-            res.render("viewer", { name: "world_cities_by_population", data });
+            res.render("viewer", { name: "world_cities_by_population", reports, data });
         });
 
     });
@@ -203,7 +290,7 @@ router.get("/viewer/world_cities_by_population_in_region", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_cities_by_population_in_region", regions, citiesInRegion });
+            res.render("viewer", { name: "world_cities_by_population_in_region", reports, regions, citiesInRegion });
 
         });
     });
@@ -240,7 +327,7 @@ router.get("/viewer/world_cities_by_population_in_district", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_cities_by_population_in_district", districts, citiesInDistrict });
+            res.render("viewer", { name: "world_cities_by_population_in_district", reports, districts, citiesInDistrict });
         });
     });
 });
@@ -278,7 +365,7 @@ router.get("/viewer/world_cities_by_population_in_country", (req, res) => {
                 return;
             }
             
-            res.render("viewer", { name: "world_cities_by_population_in_country", countries, citiesInCountry });
+            res.render("viewer", { name: "world_cities_by_population_in_country", reports, countries, citiesInCountry });
         });
     });
 });
@@ -317,7 +404,7 @@ router.get("/viewer/world_cities_by_population_in_continent", (req, res) => {
             }
 
 
-            res.render("viewer", { name: "world_cities_by_population_in_continent", continents, citiesInContinent });
+            res.render("viewer", { name: "world_cities_by_population_in_continent", reports, continents, citiesInContinent });
         });
 
     });
@@ -359,7 +446,7 @@ router.get("/viewer/world_capital_cities_by_population_in_region", (req, res) =>
                 return;  
             }
 
-            res.render("viewer", { name: "world_capital_cities_by_population_in_region", regions, citiesInRegion });
+            res.render("viewer", { name: "world_capital_cities_by_population_in_region", reports, regions, citiesInRegion });
         });
 
     });
@@ -398,7 +485,7 @@ router.get("/viewer/world_capital_cities_by_population_in_continent", (req, res)
                 
             }
 
-            res.render("viewer", { name: "world_capital_cities_by_population_in_continent", continents, citiesInContinent });
+            res.render("viewer", { name: "world_capital_cities_by_population_in_continent", reports, continents, citiesInContinent });
         });
 
     });
@@ -418,7 +505,7 @@ router.get("/viewer/world_capital_cities_by_population", (req, res) => {
                 return;           
             }
 
-            res.render("viewer", { name: "world_capital_cities_by_population", data});
+            res.render("viewer", { name: "world_capital_cities_by_population", reports, data});
         });
         
     });
@@ -442,7 +529,7 @@ router.get("/viewer/world_population", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "world_population", data });
+            res.render("viewer", { name: "world_population", reports, data });
         });
     });
 });
@@ -462,7 +549,7 @@ router.get("/viewer/continent_population", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "continent_population", data });
+            res.render("viewer", { name: "continent_population", reports, data });
         });
     });
 });
@@ -482,7 +569,7 @@ router.get("/viewer/region_population", (req, res) => {
                 return;
             }
 
-            res.render("viewer", { name: "region_population", data });
+            res.render("viewer", { name: "region_population", reports, data });
         });
     });
 });
@@ -502,7 +589,7 @@ router.get("/viewer/country_population", (req, res) => {
                 return;              
             }
             
-            res.render("viewer", { name: "country_population", data });
+            res.render("viewer", { name: "country_population", reports, data });
         });
     });
 });
@@ -522,7 +609,7 @@ router.get("/viewer/district_population", (req, res) => {
                 return;         
             }
 
-            res.render("viewer", { name: "district_population", data });
+            res.render("viewer", { name: "district_population", reports, data });
         });
     });
 });
@@ -543,7 +630,7 @@ router.get("/viewer/city_population", (req, res) => {
                 
             }
 
-            res.render("viewer", { name: "city_population", data });
+            res.render("viewer", { name: "city_population", reports, data });
         });
     });
 });
@@ -566,7 +653,7 @@ router.get("/viewer/population_languages", (req, res) => {
                 
             }
 
-            res.render("viewer", { name: "population_languages", data });
+            res.render("viewer", { name: "population_languages", reports, data });
         });
     });
 });
@@ -591,7 +678,7 @@ router.get('/viewer/population_in_out_cities_by_continent', (req, res) => {
                 
             }
 
-            res.render("viewer",  { name: "population_inout_by_continent", data });
+            res.render("viewer",  { name: "population_inout_by_continent", reports, data });
         });
     });
 });
@@ -613,7 +700,7 @@ router.get('/viewer/population_in_out_cities_by_country',(req,res)=>{
                 
             }
 
-                res.render("viewer",  { name: "population_inout_by_country", data });
+                res.render("viewer",  { name: "population_inout_by_country", reports, data });
         });
     });
 });
@@ -634,7 +721,7 @@ router.get('/viewer/population_in_out_cities_by_region', (req, res)=>{
                 
             }
 
-            res.render("viewer",  { name: "population_inout_by_region", data });
+            res.render("viewer",  { name: "population_inout_by_region", reports, data });
         });
     });
 });
