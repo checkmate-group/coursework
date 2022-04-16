@@ -13,11 +13,24 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "express-session": "^1.17.2",
     "http-errors": "~1.6.3",
     "jest": "^27.5.1",
     "morgan": "~1.9.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "pug": "^3.0.2"
-  }
+  },
+  "description": "![](/.git_assets/logo.png \"Logo\")",
+  "main": "login.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/checkmate-group/coursework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/checkmate-group/coursework/issues"
+  },
+  "homepage": "https://github.com/checkmate-group/coursework#readme"
 }

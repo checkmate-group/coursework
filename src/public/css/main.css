@@ -90,7 +90,9 @@ body {
 
 
 .navbar {
-    background: #e6dfdf
+
+    background: #ffffff
+
 }
 
 .nav-item::after {

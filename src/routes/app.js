@@ -31,6 +31,7 @@ router.get("/FAQ", (req, res) => {
 });
 
 
+
 router.get("/about/zakariya", (req, res) => {
     return res.render("about/zakariya", { name: "zakariya" });
 });
