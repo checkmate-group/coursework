@@ -8,6 +8,7 @@ const viewTableDropdownDatabase = document.getElementById("view-select-database"
 const addTableButton = document.getElementById("add-table-button");
 
 addTableButton?.addEventListener("click", (e) => {
+    // redirect to specific sub-view that is handled by express.js
     switch (viewTableDropdownDatabase.selectedIndex) {
         case 0:
             window.location.href = "/add-city/city";
