@@ -11,12 +11,19 @@ block content
                         option(value=index selected=(name == val.page))= val.title
                         
             div(class="d-flex justify-content-center")
+                input(type='number' name='quantity' id='quantity' class="form-control m-2" placeholder="Select Number Of Rows")
+    
+            div(class="d-flex justify-content-center border-bottom")
                 a(class="btn btn-primary m-2 w-25" id="view-table-button" href="#" role="button") View Report
 
+            div(class="d-flex justify-content-center")
+            
+                select(class="form-select m-2" id="view-select-database" aria-label="Database views")
+                    option(value="0") City
+                    option(value="1") Country
 
+                a(class="btn btn-primary m-2 w-25" id="add-table-button" href="#" role="button") Add New Data In Report
         div(class="" id="table")
-            div(class="d-flex justify-content-between align-items-center")
-                h2(class="text-muted fw-bold" id="view-header") Table name
 
             //- Display a different table based on which view we want
             //- TODO: is it possible to have a loop similar to the one above?
