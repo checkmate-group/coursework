@@ -21,9 +21,8 @@ block content
                 select(class="form-select m-2" id="view-select-database" aria-label="Database views")
                     option(value="0") City
                     option(value="1") Country
-
-
-            a(class="btn btn-primary m-2 w-25" id="add-table-button" href="#" role="button") Add New Data In Report
+                    
+                a(class="btn btn-primary m-2 w-25" id="add-table-button" href="#" role="button") Add New Data In Report
         div(class="" id="table")
             //- Display a different table based on which view we want
             if name == "world_population"
