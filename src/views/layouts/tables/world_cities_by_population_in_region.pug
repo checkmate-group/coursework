@@ -8,7 +8,7 @@ for region in regions
                 th Population   
                 th region  
         tbody
-            for city in citiesInRegion
+            for city,index in citiesInRegion
                 if city.Region == region
                     tr(class="rows")
                         td= city.Name 
@@ -16,3 +16,6 @@ for region in regions
                         td= city.District     
                         td= city.Population                  
                         td= city.Region
+                        td
+                          a(href=`/edit-city/${JSON.stringify(citiesInRegion[index])}` class=`btn btn-primary` id=`edit-button`) 
+                           | Edit
