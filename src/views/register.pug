@@ -1,28 +1,29 @@
 extends layouts/main
 block content
-  h2= title
 
-  if registrationError
-    .error-msg
-      p= registrationError
 
-  form.login(action='/register', method='post')
-    p User Registration
-    div
-      label(for='username') Username
-      input(type='text', id='username', name='username')
-    div
-      label(for='password') Password
-      input(type='password', id='password', name='password')
-    div
-      label(for='confirm_password') Confirm Password
-      input(type='password', id='confirm_password', name='confirmPassword')
-    div
-      input(type='hidden', name='_csrf', value=csrfToken)
+  <header>
+    <h1>Register</h1>
+  </header>
 
-    if registerFormExtraParams
-      each value, key in registerFormExtraParams
-        div
-          input(type='hidden', name=key, value=value)
-    div
-      button(type='submit') Register
+  <form action="/register" method="POST">
+    <fieldset>
+      <label>Username</label>
+      <input type ="text" id = 'username' name="username" placeholder="maverick" required>
+      <br><br>
+
+      <label>Email ID</label>
+      <input type ="email" id = 'email' name="email" placeholder="abc@example.com" required>
+      <br><br>
+
+      <label>Password</label>
+      <input type="password" id = "password" name="password" required>
+      <br><br>
+
+      <button type ="reset">Reset</button>
+      <button type ="submit">Submit</button>
+    </fieldset>
+  </form>
+  <br><br>
+        <a id="mylink" href="./login.html">login</a>
+    
