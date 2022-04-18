@@ -161,9 +161,6 @@ router.get("/register", (req, res) => {
 router.get("/contact", (req, res) => {
     return res.render("contact");
 });
-router.get("/nodeJS", (req, res) => {
-    return res.render("nodeJS");
-});
 
 // router.get("/connect", (res, req) => {
 //   let con = mysql.createConnection({
