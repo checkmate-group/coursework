@@ -20,6 +20,6 @@ app.use((req, res, next) => {
 });
 
 app.listen(port, () => {
-    console.log("server runing at http://localhost:" + port);
+    console.log("Server running on http://localhost:" + port);
 })
 
