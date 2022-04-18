@@ -2,6 +2,17 @@
 
 ![](/.git_assets/logo.png "Logo")
 
+## 16/04/2022 - Update meeting (3 hours)
+The meeting took place at 8PM and included the team leader [@ZOulhadj](https://github.com/ZOulhadj), team leader 2 [@archeris32](https://github.com/archeris32) and scrum master [@Nero-DevOps](https://github.com/Nero-DevOps). The team discussed all progress up until now and what had to be done for the final sprint (Sprint 4). Each member
+of the team was given a set of tasks that they will each work on for the final sprint. 
+
+In addition to this, we also went over the group report requirements and template in order to start working on our report.
+
+* [@ZOulhadj](https://github.com/ZOulhadj) - Cleaning up front-end and group report
+* [@archeris32](https://github.com/archeris32) - Front-end and group report
+* [@Nero-DevOps](https://github.com/Nero-DevOps) - Backend and group report
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Updating about pages, creating Sprint 4 release.
+
 ## 30/03/2022 - Update meeting (45 minutes)
 We called this meeting to prepare for our presentation to organise the best we can be and follow up with working on issues and other works loads connected to sprint 4.
 
