@@ -1,17 +1,13 @@
-var bodyParser = require("body-parser");
-const express = require("express");
-const mysql = require("mysql2");
-
-const misc = require("./misc");
-
-const router = express.Router();
-const jsonParser = bodyParser.json();
-const urlencodedParser = bodyParser.urlencoded({ extended: false });
-
+const bodyParser = require("body-parser");
+const express    = require("express");
+const mysql      = require("mysql2");
+const misc       = require("./misc");
 
 // TODO: Could we replace this with just misc.reports throughout the file?
-const reports = misc.reports;
-const continents = misc.continents;
+const reports          = misc.reports;
+const continents       = misc.continents;
+const router           = express.Router();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const pool = mysql.createPool({
     host: "172.19.0.1",
