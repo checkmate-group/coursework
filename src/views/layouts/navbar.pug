@@ -11,12 +11,14 @@ div(class="container" bis_skin_checked="1")
                     li(class="nav-item active custom-nav-item")
                         a(href="/" class="nav-link text-dark custom-nav-link") Home
                     li(class="nav-item active custom-nav-item")
-                        a(href="about" class="nav-link text-dark custom-nav-link") About
+                        a(href="/about" class="nav-link text-dark custom-nav-link") About
                     li(class="nav-item active custom-nav-item")
-                        a(href="features" class="nav-link text-dark custom-nav-link") Features
+                        a(href="/features" class="nav-link text-dark custom-nav-link") Features
                     li(class="nav-item active custom-nav-item")
-                        a(href="contact" class="nav-link text-dark custom-nav-link") Contact Us
+                        a(href="/contact" class="nav-link text-dark custom-nav-link") Contact Us
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/totorial" class="nav-link text-dark custom-nav-link") Tutorial    
 
         div(class="col-md-3 text-end" bis_skin_checked="1")
-            a(type="button" href="/login" class="btn btn-outline-primary me-2") Login
-            a(type="button" href="/register" class="btn btn-primary") Sign up
+            a(type="button" href=username ? "/logout":"/login" class="btn btn-outline-primary me-2")  #{username ? 'Logout': 'Login'}
+            a(type="button" href="/register" class="btn btn-primary" style=username && 'display:none') Sign up
