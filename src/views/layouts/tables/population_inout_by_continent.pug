@@ -1,0 +1,12 @@
+table(class="table")
+    thead
+        tr
+            th Conitnent                 
+            th Population out of cities    
+            th Population in cities    
+        for cp in data
+            tr(class="rows")
+                td= cp.continent
+                td= cp.poutc                                                   
+                td= cp.pinc                                                   
+    br
