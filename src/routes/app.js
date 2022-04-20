@@ -1,137 +1,137 @@
 const bodyParser = require("body-parser");
-const express    = require("express");
-const mysql      = require("mysql2");
-const misc       = require("./misc");
+const express = require("express");
+const mysql = require("mysql2");
+const misc = require("./misc");
 
 // TODO: Could we replace this with just misc.reports throughout the file?
-const reports          = misc.reports;
-const continents       = misc.continents;
-const router           = express.Router();
+const reports = misc.reports;
+const continents = misc.continents;
+const router = express.Router();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const pool = mysql.createPool({
-    host: "172.19.0.1",
-    port: "3306",
-    user: "root",
-    password: "password",
-    database: "world",
+  host: "172.21.0.1",
+  port: "3306",
+  user: "root",
+  password: "password",
+  database: "world",
 });
 
 router.get("/", (req, res) => {
-    return res.render("index", { username: req.session.username });
+  return res.render("index", { username: req.session.username });
 });
 
 router.get("/about", (req, res) => {
-    return res.render("about", { username: req.session.username });
+  return res.render("about", { username: req.session.username });
 });
 
 router.get("/about/zakariya", (req, res) => {
-    return res.render("about/zakariya", {
-        name: "zakariya",
-        username: req.session.username,
-    });
+  return res.render("about/zakariya", {
+    name: "zakariya",
+    username: req.session.username,
+  });
 });
 
 router.get("/about/bogdan", (req, res) => {
-    return res.render("about/bogdan", {
-        name: "bogdan",
-        username: req.session.username,
-    });
+  return res.render("about/bogdan", {
+    name: "bogdan",
+    username: req.session.username,
+  });
 });
- 
+
 router.get("/about/taylor", (req, res) => {
-    return res.render("about/taylor", {
-        name: "taylor",
-        username: req.session.username,
-    });
+  return res.render("about/taylor", {
+    name: "taylor",
+    username: req.session.username,
+  });
 });
-  
+
 router.get("/about/kezzy", (req, res) => {
-    return res.render("about/kezzy", {
-        name: "kezzy",
-        username: req.session.username,
-    });
+  return res.render("about/kezzy", {
+    name: "kezzy",
+    username: req.session.username,
+  });
 });
 
 router.get("/features", (req, res) => {
-    return res.render("features", { username: req.session.username });
+  return res.render("features", { username: req.session.username });
 });
 
 router.get("/faq", (req, res) => {
-    return res.render("faq", { username: req.session.username });
+  return res.render("faq", { username: req.session.username });
 });
 
 router.get("/totorial", (req, res) => {
-    return res.render("totorial", { username: req.session.username });
+  return res.render("totorial", { username: req.session.username });
 });
 
 router.get("/contact", (req, res) => {
-    return res.render("contact", { username: req.session.username });
+  return res.render("contact", { username: req.session.username });
 });
 
 router.get("/viewer", (req, res) => {
-    return res.render("viewer", { reports, username: req.session.username });
+  return res.render("viewer", { reports, username: req.session.username });
 });
 
 router.get("/login", (req, res) => {
-    return res.render("login");
+  return res.render("login");
 });
 
 router.get("/logout", (req, res) => {
-    req.session.destroy();
+  req.session.destroy();
 
-    return res.render("index");
+  return res.render("index");
 });
 
 router.get("/register", (req, res) => {
-    return res.render("register");
+  return res.render("register");
 });
-  
+
 router.post("/register", urlencodedParser, (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
-    const email = req.body.email;
-  
-    pool.getConnection((err, connection) => {
-      let query = `INSERT INTO user (username, email, password) VALUES ('${username}','${email}','${password}');`;
-      connection.query(query, (err, data) => {
-        connection.release();
-        if (err) {
-          console.log("not able to add", err.message);
-          return;
-        }
-        res.render("register", {
-          message: "User Added",
-          username: req.session.username,
-        });
+  const username = req.body.username;
+  const password = req.body.password;
+  const email = req.body.email;
+
+  pool.getConnection((err, connection) => {
+    let query = `INSERT INTO user (username, email, password) VALUES ('${username}','${email}','${password}');`;
+    connection.query(query, (err, data) => {
+      connection.release();
+      if (err) {
+        console.log("not able to add", err.message);
+        return;
+      }
+      res.render("register", {
+        message: "User Added",
+        username: req.session.username,
       });
     });
+  });
 });
 
 router.post("/login", urlencodedParser, (req, res) => {
-    const username = req.body.username;
-    const password = req.body.password;
-    let query, session;
+  const username = req.body.username;
+  const password = req.body.password;
+  let query, session;
 
-    if (username !== "" && password !== "") {
-        pool.getConnection((err, connection) => {
-            query = `SELECT COUNT(*) FROM user WHERE username='${username}' and password ='${password}';`;
+  if (username !== "" && password !== "") {
+    pool.getConnection((err, connection) => {
+      query = `SELECT COUNT(*) FROM user WHERE username='${username}' and password ='${password}';`;
 
-            connection.query(query, (err, data) => {
-                connection.release();
-                if (data[0]["COUNT(*)"] < 1) {
-                    res.status(404);
-                    res.render("login", { message: "User does not exist" });
-                } else {
-                    session = req.session;
-                    session.username = username;
-                    res.redirect("viewer");
-                }
-            });
-        });
-    } else {
-        res.render("login", { message: "Username or password is wrong" });
-    }
+      connection.query(query, (err, data) => {
+        connection.release();
+        if (data[0]["COUNT(*)"] < 1) {
+          res.status(404);
+          res.render("login", { message: "User does not exist" });
+        } else {
+          session = req.session;
+          session.username = username;
+          res.redirect("viewer");
+        }
+      });
+    });
+  } else {
+    res.render("login", { message: "Username or password is wrong" });
+  }
 });
 
 router.get("/edit-city/:data?", (req, res) => {
@@ -254,6 +254,7 @@ router.post("/add-city/:data?", urlencodedParser, (req, res) => {
 router.get("/viewer/world_countries_by_population/:limit?", (req, res) => {
   pool.getConnection((err, connection) => {
     const limit = req.params.limit;
+    console.log("world_countries_by_population");
     if (limit) {
       query = `select Code,Name,Continent,Region,Population,Capital from country order by population desc LIMIT ${limit}`;
     } else {
@@ -287,11 +288,12 @@ router.get(
   (req, res) => {
     pool.getConnection((err, connection) => {
       const limit = req.params.limit;
+      console.log("world_countries_by_population_in_region");
       let query;
       if (limit) {
-        query = `select Code,Name,Continent,Region,Population,Capital from country order by region,population desc LIMIT ${limit}`;
+        query = `select Code,Name,Continent,Region,Population,Capital from country order by region desc LIMIT ${limit}`;
       } else {
-        query = `select Code,Name,Continent,Region,Population,Capital from country order by region,population desc`;
+        query = `select Code,Name,Continent,Region,Population,Capital from country order by region desc`;
       }
 
       connection.query(query, (err, data) => {
@@ -313,7 +315,7 @@ router.get(
         regionsSet = null;
 
         if (err) {
-          console.log("error");
+          console.log("error", err);
           return;
         }
 
@@ -904,33 +906,25 @@ router.get("/viewer/population_languages/:limit?", (req, res) => {
     const limit = req.params.limit;
     let query;
     if (limit) {
-      query = `select sum(co.population) as population,cl.language as language from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language order by population desc LIMIT ${limit}`;
+      query = `select sum(co.population) as population,cl.language as language,cl.percentage as percentage from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language,cl.percentage order by population desc LIMIT ${limit}`;
     } else {
-      query = `select sum(co.population) as population,cl.language as language from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language order by population desc`;
+      query = `select sum(co.population) as population,cl.language as language,cl.percentage as percentage from country co,countrylanguage cl where cl.countrycode = co.code and cl.language in('chinese','arabic','english','hindi','spanish') group by cl.language,cl.percentage order by population desc`;
     }
 
     connection.query(query, (err, data) => {
       connection.release();
 
       if (err) {
-        console.log("error");
+        console.log("error", err);
         return;
       }
 
-      connection.query(query, (err, data) => {
-        connection.release();
-
-        if (err) {
-          console.log("error");
-          return;
-        }
-
-        res.render("viewer", {
-          name: "population_languages",
-          reports,
-          data,
-          username: req.session.username,
-        });
+      console.log(data);
+      res.render("viewer", {
+        name: "population_languages",
+        reports,
+        data,
+        username: req.session.username,
       });
     });
   });
@@ -1014,14 +1008,14 @@ router.get("/viewer/population_in_out_cities_by_region/:limit?", (req, res) => {
     if (limit) {
       query = `select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.region as region from country co,city ci where co.code = ci.countryCode group by co.region LIMIT ${limit} `;
     } else {
-      query = `select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.region as region from country co,city ci where co.code = ci.countryCode group by co.region LIMIT`;
+      query = `select sum(distinct ci.population) as pinc,sum(distinct co.population) - sum(ci.population) as poutc,co.region as region from country co,city ci where co.code = ci.countryCode group by co.region`;
     }
 
     connection.query(query, (err, data) => {
       connection.release();
 
       if (err) {
-        console.log("error");
+        console.log("error", err);
         return;
       }
 
