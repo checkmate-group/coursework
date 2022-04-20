@@ -2,229 +2,142 @@ var bodyParser = require("body-parser");
 const express = require("express");
 const mysql = require("mysql2");
 
+const misc = require("./misc");
+
 const router = express.Router();
-var jsonParser = bodyParser.json();
-var urlencodedParser = bodyParser.urlencoded({ extended: false });
+const jsonParser = bodyParser.json();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-const reports = [
-  {
-    title: "World Population",
-    page: "world_population",
-  },
-  {
-    title: "World countries by population",
-    page: "world_countries_by_population",
-  },
-  {
-    title: "World countires by population in region",
-    page: "world_countries_by_population_in_region",
-  },
-  {
-    title: "World countires by population in continent",
-    page: "world_countries_by_population_in_continent",
-  },
-  {
-    title: "World cities by population",
-    page: "world_cities_by_population",
-  },
-  {
-    title: "World cities by population in region",
-    page: "world_cities_by_population_in_region",
-  },
-  {
-    title: "World cities by population in district",
-    page: "world_cities_by_population_in_district",
-  },
-  {
-    title: "World cities by population in country",
-    page: "world_cities_by_population_in_country",
-  },
-  {
-    title: "World cities by population in continent",
-    page: "world_cities_by_population_in_continent",
-  },
-  {
-    title: "World capital cities by population",
-    page: "world_capital_cities_by_population",
-  },
-  {
-    title: "World capital cities by population in region",
-    page: "world_capital_cities_by_population_in_region",
-  },
-  {
-    title: "World capital cities by population in continent",
-    page: "world_capital_cities_by_population_in_continent",
-  },
-  {
-    title: "Region population",
-    page: "region_population",
-  },
-  {
-    title: "Population languages",
-    page: "population_languages",
-  },
-  {
-    title: "District population",
-    page: "district_population",
-  },
-  {
-    title: "Country population",
-    page: "country_population",
-  },
-  {
-    title: "Continent population",
-    page: "continent_population",
-  },
-  {
-    title: "City population",
-    page: "city_population",
-  },
-  {
-    title: "Population in and out of cities by continent",
-    page: "population_in_out_cities_by_continent",
-  },
-  {
-    title: "Population in and out of cities by country",
-    page: "population_in_out_cities_by_country",
-  },
-  {
-    title: "Population in and out of cities by region",
-    page: "population_in_out_cities_by_region",
-  },
-];
 
-// config the database connection
+// TODO: Could we replace this with just misc.reports throughout the file?
+const reports = misc.reports;
+const continents = misc.continents;
 
 const pool = mysql.createPool({
-  host: "172.19.0.1",
-  port: "3306",
-  user: "root",
-  password: "password",
-  database: "world",
+    host: "172.19.0.1",
+    port: "3306",
+    user: "root",
+    password: "password",
+    database: "world",
 });
-
-const continents = [
-  "Asia",
-  "Europe",
-  "North America",
-  "Africa",
-  "Oceania",
-  "Antarctica",
-  "South America",
-];
 
 router.get("/", (req, res) => {
-  return res.render("index", { username: req.session.username });
-});
-
-router.get("/logout", (req, res) => {
-  req.session.destroy();
-  return res.render("index");
-});
-router.get("/login", (req, res) => {
-  return res.render("login");
-});
-
-router.post("/login", urlencodedParser, (req, res) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  let query, session;
-  if (username !== "" && password !== "") {
-    pool.getConnection((err, connection) => {
-      query = `SELECT COUNT(*) FROM user WHERE username='${username}' and password ='${password}';`;
-
-      connection.query(query, (err, data) => {
-        connection.release();
-        if (data[0]["COUNT(*)"] < 1) {
-          res.status(404);
-          res.render("login", { message: "User does not exist" });
-        } else {
-          session = req.session;
-          session.username = username;
-          res.redirect("viewer");
-        }
-      });
-    });
-  } else {
-    res.render("login", { message: "Username or password is wrong" });
-  }
-});
-
-router.get("/viewer", (req, res) => {
-  return res.render("viewer", { reports, username: req.session.username });
+    return res.render("index", { username: req.session.username });
 });
 
 router.get("/about", (req, res) => {
-  return res.render("about", { username: req.session.username });
-});
-router.get("/FAQ", (req, res) => {
-  return res.render("FAQ", { username: req.session.username });
+    return res.render("about", { username: req.session.username });
 });
 
 router.get("/about/zakariya", (req, res) => {
-  return res.render("about/zakariya", {
-    name: "zakariya",
-    username: req.session.username,
-  });
-});
-
-router.get("/about/taylor", (req, res) => {
-  return res.render("about/taylor", {
-    name: "taylor",
-    username: req.session.username,
-  });
-});
-
-router.get("/about/kezzy", (req, res) => {
-  return res.render("about/kezzy", {
-    name: "kezzy",
-    username: req.session.username,
-  });
+    return res.render("about/zakariya", {
+        name: "zakariya",
+        username: req.session.username,
+    });
 });
 
 router.get("/about/bogdan", (req, res) => {
-  return res.render("about/bogdan", {
-    name: "bogdan",
-    username: req.session.username,
-  });
+    return res.render("about/bogdan", {
+        name: "bogdan",
+        username: req.session.username,
+    });
+});
+ 
+router.get("/about/taylor", (req, res) => {
+    return res.render("about/taylor", {
+        name: "taylor",
+        username: req.session.username,
+    });
+});
+  
+router.get("/about/kezzy", (req, res) => {
+    return res.render("about/kezzy", {
+        name: "kezzy",
+        username: req.session.username,
+    });
 });
 
 router.get("/features", (req, res) => {
-  return res.render("features", { username: req.session.username });
+    return res.render("features", { username: req.session.username });
 });
 
-router.get("/register", (req, res) => {
-  return res.render("register");
-});
-
-router.post("/register", urlencodedParser, (req, res) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  const email = req.body.email;
-
-  pool.getConnection((err, connection) => {
-    let query = `INSERT INTO user (username, email, password) VALUES ('${username}','${email}','${password}');`;
-    connection.query(query, (err, data) => {
-      connection.release();
-      if (err) {
-        console.log("not able to add", err.message);
-        return;
-      }
-      res.render("register", {
-        message: "User Added",
-        username: req.session.username,
-      });
-    });
-  });
-});
-
-router.get("/contact", (req, res) => {
-  return res.render("contact", { username: req.session.username });
+router.get("/faq", (req, res) => {
+    return res.render("faq", { username: req.session.username });
 });
 
 router.get("/totorial", (req, res) => {
-  return res.render("totorial", { username: req.session.username });
+    return res.render("totorial", { username: req.session.username });
 });
+
+router.get("/contact", (req, res) => {
+    return res.render("contact", { username: req.session.username });
+});
+
+router.get("/viewer", (req, res) => {
+    return res.render("viewer", { reports, username: req.session.username });
+});
+
+router.get("/login", (req, res) => {
+    return res.render("login");
+});
+
+router.get("/logout", (req, res) => {
+    req.session.destroy();
+
+    return res.render("index");
+});
+
+router.get("/register", (req, res) => {
+    return res.render("register");
+});
+  
+router.post("/register", urlencodedParser, (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    const email = req.body.email;
+  
+    pool.getConnection((err, connection) => {
+      let query = `INSERT INTO user (username, email, password) VALUES ('${username}','${email}','${password}');`;
+      connection.query(query, (err, data) => {
+        connection.release();
+        if (err) {
+          console.log("not able to add", err.message);
+          return;
+        }
+        res.render("register", {
+          message: "User Added",
+          username: req.session.username,
+        });
+      });
+    });
+});
+
+router.post("/login", urlencodedParser, (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    let query, session;
+
+    if (username !== "" && password !== "") {
+        pool.getConnection((err, connection) => {
+            query = `SELECT COUNT(*) FROM user WHERE username='${username}' and password ='${password}';`;
+
+            connection.query(query, (err, data) => {
+                connection.release();
+                if (data[0]["COUNT(*)"] < 1) {
+                    res.status(404);
+                    res.render("login", { message: "User does not exist" });
+                } else {
+                    session = req.session;
+                    session.username = username;
+                    res.redirect("viewer");
+                }
+            });
+        });
+    } else {
+        res.render("login", { message: "Username or password is wrong" });
+    }
+});
+
 router.get("/edit-city/:data?", (req, res) => {
   const formData = JSON.parse(req.params.data);
   const filterOption = continents.filter((val) => val !== formData.Continent);

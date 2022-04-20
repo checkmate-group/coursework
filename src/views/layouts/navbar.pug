@@ -20,5 +20,5 @@ div(class="container" bis_skin_checked="1")
                         a(href="/contact" class="nav-link text-dark custom-nav-link") Contact Us 
 
         div(class="col-md-3 text-end" bis_skin_checked="1")
-            a(type="button" href=username ? "/logout":"/login" class="btn btn-outline-primary me-2")  #{username ? 'Logout': 'Login'}
-            a(type="button" href="/register" class="btn btn-primary" style=username && 'display:none') Sign up
+            a(type="button" href=username ? "/logout" : "/login" class="btn btn-outline-primary me-2")  #{username ? "Logout": "Login"}
+            a(type="button" href="/register" class="btn btn-primary" style=username && "display:none") Sign up
