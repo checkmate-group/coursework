@@ -1,13 +1,13 @@
-const viewTableDropdown = document.getElementById("view-select");
-const viewTableButton = document.getElementById("view-table-button");
-const viewTableHeader = document.getElementById("view-header");
-const table = document.getElementById("table");
-const filter = document.querySelector("#quantity");
-const editTableButton = document.getElementById("edit-button");
+const viewTableDropdown         = document.getElementById("view-select");
+const viewTableButton           = document.getElementById("view-table-button");
+const viewTableHeader           = document.getElementById("view-header");
+const table                     = document.getElementById("table");
+const editTableButton           = document.getElementById("edit-button");
 const viewTableDropdownDatabase = document.getElementById("view-select-database");
-const addTableButton = document.getElementById("add-table-button");
+const addTableButton            = document.getElementById("add-table-button");
+const filter                    = document.querySelector("#quantity");
 
-addTableButton?.addEventListener("click", (e) => {
+addTableButton?.addEventListener("click", e => {
     // redirect to specific sub-view that is handled by express.js
     switch (viewTableDropdownDatabase.selectedIndex) {
         case 0:
