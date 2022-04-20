@@ -11,7 +11,7 @@ block content
                         option(value=index selected=(name == val.page))= val.title
                 
             div(class="d-flex justify-content-center")
-                input(type='number' name='quantity' id='quantity' class="form-control m-2" placeholder="Select Number Of Rows")
+                input(type="number" name="quantity" id="quantity" class="form-control m-2" placeholder="Select Number Of Rows")
     
             div(class="d-flex justify-content-center border-bottom")
                 a(class="btn btn-primary m-2 w-25" id="view-table-button" href="#" role="button") View Report
@@ -24,7 +24,7 @@ block content
 
                 a(class="btn btn-primary m-2 w-25" id="add-table-button" href="#" role="button") Add New Data In Report
 
-        div(class="" id="table")
+        div(id="table")
             //- Display a different table based on which view we want
             if name == "world_population"
                 include layouts/tables/world_population
@@ -66,7 +66,7 @@ block content
                 include layouts/tables/population_in_out_cities_by_country
             else if name == "population_in_out_cities_by_region"
                 include layouts/tables/population_in_out_cities_by_region
-            else if name =='world_cities_by_population_in_country'
+            else if name =="world_cities_by_population_in_country"
                 include layouts/tables/world_cities_by_population_in_country
 
 block scripts 
