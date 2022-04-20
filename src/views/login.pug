@@ -3,20 +3,24 @@ extends layouts/main
 block content
 
     main(class="d-flex justify-content-center align-items-center flex-column form-signin vw-100")
-        div(class="alert alert-warning" role="alert") Login not implemented
+        div(class="alert alert-warning" role="alert") Login 
+         
 
-        form
+        form(class="mb-5" method="post"  action="/login")
+            div(classnamw='alert alert-danger' role='alert') #{message && message}
+
             h1(class="h3 mb-3 fw-normal")
 
             div(class="form-floating" bis_skin_checked="1")
-                input(type="email" class="form-control" id="floatingInput" placeholder="name@example.com")
-                label(for="floatingInput") Username
+                input(type="text" class="form-control" id="username" name="username" placeholder="Username")
+                label(for="username") Username
 
             div(class="form-floating" bis_skin_checked="1")
-                input(type="password" class="form-control" id="floatingPassword" placeholder="Password")
-                label(for="floatingPassword") Password
+                input(type="password" class="form-control" id="password" name="password" placeholder="Password")
+                label(for="password") Password
 
             div(class="checkbox mb-3" bis_skin_checked="1")
                 label #[input(type="checkbox" value="remember-me")] Remember me
 
-            a(class="w-100 btn btn-lg btn-primary" href="/viewer" type="submit") Login
+            div(class="d-flex justify-content-center")
+               input(type='submit', value='Login' class="btn btn-primary")
