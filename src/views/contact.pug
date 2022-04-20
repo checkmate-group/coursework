@@ -1,22 +1,22 @@
 extends layouts/main
 
 block content
-        div(class="text-center p-5")
+    div(class="text-center p-5")
 
-            h1 Get in touch
-            main(class="form-signin")
-               form(action="https://formsubmit.co/adascalului.bogdan@gmail.com" method="POST")
-                    div(class="form-floating" bis_skin_checked="1")
-                        input(type="hidden" name="_captcha" value="false")
-                        input(type="text" class="form-control" id="floatingInput" placeholder="John Doe")
-                        label(for="floatingInput") Name
+        h1 Get in touch
+        main(class="form-signin")
+            form(action="https://formsubmit.co/adascalului.bogdan@gmail.com" method="POST")
+                div(class="form-floating" bis_skin_checked="1")
+                    input(type="hidden" name="_captcha" value="false")
+                    input(type="text" class="form-control" id="floatingInput" placeholder="John Doe")
+                    label(for="floatingInput") Name
 
-                    div(class="form-floating" bis_skin_checked="1")
-                        input(type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com")
-                        label(for="floatingInput") Email address
+                div(class="form-floating" bis_skin_checked="1")
+                    input(type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com")
+                    label(for="floatingInput") Email address
 
-                    div(class="form-floating" bis_skin_checked="1")
-                        input(type="text" class="form-control" id="floatingPassword" placeholder="message")
-                        label(for="floatingPassword") Message
+                div(class="form-floating" bis_skin_checked="1")
+                    input(type="text" class="form-control" id="floatingPassword" placeholder="message")
+                    label(for="floatingPassword") Message
 
-                    button(class="w-100 btn btn-lg btn-primary mt-5" type="submit") Send
+                button(class="w-100 btn btn-lg btn-primary mt-5" type="submit") Send
