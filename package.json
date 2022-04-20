@@ -1,6 +1,17 @@
 {
-  "name": "app",
-  "version": "0.0.2",
+  "name": "database-viewer",
+  "description": "Software Engineering Group Project",
+  "version": "0.0.4",
+  "author": "Checkmate Group",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/checkmate-group/coursework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/checkmate-group/coursework/issues"
+  },
+  "homepage": "https://localhost:3000",
   "private": true,
   "scripts": {
     "start": "node ./index.js",
@@ -20,17 +31,5 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
     "pug": "^3.0.2"
-  },
-  "description": "![](/.git_assets/logo.png \"Logo\")",
-  "main": "login.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/checkmate-group/coursework.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/checkmate-group/coursework/issues"
-  },
-  "homepage": "https://github.com/checkmate-group/coursework#readme"
+  }
 }
