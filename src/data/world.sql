@@ -21,10 +21,28 @@ SET @old_autocommit=@@autocommit;
 --
 
 /*!40000 DROP DATABASE IF EXISTS `world`*/;
-
 CREATE DATABASE `world` DEFAULT CHARACTER SET utf8mb4;
 
 USE `world`;
+
+--
+-- Table structure for table `city`
+--
+
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+
+CREATE TABLE `user`(
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` char(35),
+  `email` char(35),
+  `password` char(35),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+set autocommit=0;
 
 --
 -- Table structure for table `city`
