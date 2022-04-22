@@ -1,20 +1,23 @@
 extends ../layouts/main
 block content
-    
-    <html>
-    
-    <head>
-        <title>Lightbox Gallery</title>
-    </head>
-    
-    <body>
-        <h2>GeeksforGeeks</h2>
-        <b>A Computer Science Portal for Geeks</b>
-        <div class="gallery">
-            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20200318142254/html9.png"> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200318143104/html10.png"></a>
-            <a href="https://media.geeksforgeeks.org/wp-content/uploads/20200318142245/CSS8.png"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200318143101/CSS9.png"></a>
+    div(class="px-4 pt-5 my-5 text-center border-bottom" bis_skin_checked="1")
+            h1(class="display-4 fw-bold") Node JS
             
-        </div>
-    </body>
-    
-    </html>
+            p Node.js was used for the backend of the project because it has the best way to scale any project 
+            p and will contribute to the smooth and efficient operation due to being able to use tools and develop faster.
+            p As well as being a safe technology, this is an industry known so that companies will have support and confidence with this.
+
+            <div class="container  center">
+                <div class="top">
+                    <ul>
+                        <li><a href="#img_1"><img src="/images/nodejs1.png"></a></li>
+                        <li><a href="#img_2"><img src="/images/nodejs2.png"></a></li>
+                        <li><a href="#img_3"><img src="/images/nodejs3.png"></a></li>
+                        
+                    </ul>
+                    <a href="#_1" class="lightbox trans" id="img_1"><img src="/images/nodejs1.png"></a>
+                    <a href="#_2" class="lightbox trans" id="img_2"><img src="/images/nodejs2.png"></a>
+                    <a href="#_3" class="lightbox trans" id="img_3"><img src="/images/nodejs3.png"></a>
+                    
+                </div>
+            </div>
