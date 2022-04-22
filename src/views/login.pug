@@ -1,9 +1,10 @@
 extends layouts/main
 
 block content
+    
 
     main(class="d-flex justify-content-center align-items-center flex-column form-signin vw-100")
-        div(class="alert alert-warning" role="alert") Login 
+        h2(class="display-4 fw-bold") LOGIN
          
 
         form(class="mb-5" method="post"  action="/login")
@@ -21,6 +22,9 @@ block content
 
             div(class="checkbox mb-3" bis_skin_checked="1")
                 label #[input(type="checkbox" value="remember-me")] Remember me
+            <div class="eula" type="checkbox">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+                <input type="checkbox" name="1" value="1" required> Agree
 
             div(class="d-flex justify-content-center")
                input(type='submit', value='Login' class="btn btn-primary")
+
