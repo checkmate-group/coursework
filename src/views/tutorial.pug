@@ -27,3 +27,62 @@ block content
             iframe(class='embed-responsive-item', src='https://www.youtube.com/embed/ZbhiL_5hf_Q', allowfullscreen='' width="100%")
             br
             a.btn.btn-primary(href='https://www.youtube.com/embed/ZbhiL_5hf_Q' class='d-flex justify-content-center' target="_blank" rel="noopener noreferrer") Go To Link
+      div(class="px-4 pt-5 my-5 justify-content-center text-center border-bottom" bis_skin_checked="1")
+        h1(class="display-4 fw-bold text-center border-bottom ") FAQ
+        
+        button(class="accordion text-center") How to Connect
+        div(class="panel text-center")
+          p Steps:.
+          p 1:clone our Git repository: https://github.com/checkmate-group/coursework.git
+          p 2:build the docker container by writing in the terminal : docker-compose up --build
+          p 3:Go to http://localhost:3000/
+          p 4.Enjoy
+
+        
+
+        button(class="accordion text-center") How to contact us
+        div(class="panel text-center")
+          p After building our system, just go to the Contact Us section of our website.
+          p Every single message will be redirected to one of our devs. Press the contact button if you want to send a message 
+          p
+          a(type="button" href="/contact" class="btn btn-primary") Contact Us
+        
+
+        button(class="accordion text-center") How to acces the database
+        div(class="panel text-center")
+          p Only registered users can acces the database, so please register first. For registration please click the button below. 
+          p  
+          a(type="button" href="/register" class="btn btn-primary" style=username && "display:none") Sign up
+        
+
+      
+      script.
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for(i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+      script.
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
