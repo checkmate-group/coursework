@@ -45,7 +45,12 @@ router.get("/about/taylor", (req, res) => {
         username: req.session.username,
     });
 });
-
+router.get("/about/client", (req, res) => {
+    return res.render("about/client", {
+        name: "client",
+        username: req.session.username,
+    });
+});
 router.get("/about/kezzy", (req, res) => {
     return res.render("about/kezzy", {
         name: "kezzy",
@@ -98,6 +103,7 @@ router.get("/technologies/node_js", (req, res) => {
 router.get("/technologies/Express_js", (req, res) => {
     return res.render("technologies/Express_js");
 });
+
 
 
 router.post("/register", urlencodedParser, (req, res) => {
