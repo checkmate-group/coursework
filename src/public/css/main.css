@@ -184,8 +184,9 @@ transition: max-height 0.2s ease-out;
 {
 	width: 100%;
 	height: 100%;
-    
+    position:relative    
 }
+
 .trans
 {
 	transition: all 1s ease;
@@ -203,6 +204,14 @@ transition: max-height 0.2s ease-out;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10vh;
+    
+    
+}
+.module
+{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
 }
 .top ul
 {
@@ -219,6 +228,7 @@ transition: max-height 0.2s ease-out;
 	width: 25%;
 	height: 25%;
 	overflow: hidden;
+    margin: 0.3cm;
 }
 
 .top ul li::before
