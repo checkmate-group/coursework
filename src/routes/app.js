@@ -10,7 +10,7 @@ const router = express.Router();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 const pool = mysql.createPool({
-    host: "172.19.0.1",
+    host: "172.18.0.1",
     port: "3306",
     user: "root",
     password: "password",
