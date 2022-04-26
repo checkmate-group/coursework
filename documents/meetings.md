@@ -1,6 +1,11 @@
 # Meeting Minutes
 
 ![](/.git_assets/logo.png "Logo")
+## 19/04/2022 - Finishing the group report (11 hours)
+The meeting started a 3:30 and all the active members of the group participated [@ZOulhadj](https://github.com/ZOulhadj), [@archeris32](https://github.com/archeris32)  [@Nero-DevOps](https://github.com/Nero-DevOps). We had a brainstorm meeting in order to decide what should we say at the presentation.
+We finished early in the morning, around 2:30 in the morning.
+
+
 ## 19/04/2022 - Finishing the group report (4 hours)
 The meeting started a 7:30 and included the team leader [@ZOulhadj](https://github.com/ZOulhadj), team leader 2 [@archeris32](https://github.com/archeris32) and scrum master [@Nero-DevOps](https://github.com/Nero-DevOps). We all channeled our efforts into finishing our Group Report.
 In addition to this, we also went over the final touches that needs to be done.
@@ -8,7 +13,6 @@ In addition to this, we also went over the final touches that needs to be done.
 * [Zakariya Oulhadj](https://github.com/ZOulhadj) - Cleaning up front-end 
 * [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Front-end
 * [Taylor Head](https://github.com/Nero-DevOps) - Backend 
-* [Mohamed Kaizra](https://github.com/KezzyRk) - Updating about pages, creating Sprint 4 release.
 
 ## 16/04/2022 - Update meeting (3 hours)
 The meeting took place at 8PM and included the team leader [@ZOulhadj](https://github.com/ZOulhadj), team leader 2 [@archeris32](https://github.com/archeris32) and scrum master [@Nero-DevOps](https://github.com/Nero-DevOps). The team discussed all progress up until now and what had to be done for the final sprint (Sprint 4). Each member
@@ -19,7 +23,6 @@ In addition to this, we also went over the group report requirements and templat
 * [Zakariya Oulhadj](https://github.com/ZOulhadj) - Cleaning up front-end and group report
 * [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Front-end and group report
 * [Taylor Head](https://github.com/Nero-DevOps) - Backend and group report
-* [Mohamed Kaizra](https://github.com/KezzyRk) - Updating about pages, creating Sprint 4 release.
 
 ## 30/03/2022 - Update meeting (45 minutes)
 We called this meeting to prepare for our presentation to organise the best we can be and follow up with working on issues and other works loads connected to sprint 4.
