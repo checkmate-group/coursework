@@ -6,13 +6,20 @@ table(class="table")
             th Continent     
             th Region
             th Population
-            th Capital  
+            th Capital
+            
+           
     tbody
-        for country in data
-            tr(class="rows")
+        for country,index in data
+            tr(class="rows" id='row-table' role='button')
                 td= country.Code 
                 td= country.Name                   
                 td= country.Continent                                  
                 td= country.Region                                  
-                td(class="text-end")= country.Population                                  
-                td(class="text-end")= country.Capital
+                td= country.Population                                  
+                td= country.Capital
+                td
+                 a(href=`/edit/${JSON.stringify(data[index])}` class=`btn btn-primary` id=`edit-button`) 
+                   | Edit  
+
+

@@ -1,42 +1,23 @@
-<div class="container" bis_skin_checked="1">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom ">
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            img(src="/images/logo_icon.png" class="rounded-circle" width=50 alt="")
-        </a>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="/about" class="nav-link px-2 link-dark">About</a></li>
-            <li><a href="/features" class="nav-link px-2 link-dark">Features</a></li>
-            <li><a href="/contact" class="nav-link px-2 link-dark">Contact</a></li>
-            //- <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-        </ul>
-
-        <div class="col-md-3 text-end" bis_skin_checked="1">
-            <a type="button" href="/login" class="btn btn-outline-primary me-2">Login</a>
-            <a type="button" href="/register" class="btn btn-primary">Sign up</a>
-        </div>
-    </header>
-</div>
-
-
-//- nav(class="navbar sticky-top navbar-expand-lg navbar-light bg-light shadow-sm")
-//-     div(class="container-fluid")
-//-         a(class="navbar-brand" href="/") Database Viewer
-    
-//-         button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-//-             span(class="navbar-toggler-icon")
-
-//-         div(class="collapse navbar-collapse" id="navbarSupportedContent")
-//-             ul(class="navbar-nav me-auto mb-2 mb-lg-0")
-//-                 li(class="nav-item")
-//-                     a(class="nav-link active" aria-current="page" href="/") Home
-//-                 li(class="nav-item")
-//-                     a(class="nav-link active" aria-current="page" href="/about") About
-//-                 li(class="nav-item")
-//-                     a(class="nav-link active" aria-current="page" href="/features") Features
-//-                 li(class="nav-item")
-//-                     a(class="nav-link active" aria-current="page" href="/contact") Contact Us
-//-             //- form(class="d-flex")
-//-             //-     input(class="form-control me-2" type="search" placeholder="Search" aria-label="Search")
-//-             //-     button(class="btn btn-outline-success" type="submit") Search
+div(class="container" bis_skin_checked="1")
+    header(class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between mb-4 border-bottom")
+        a(href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none")
+            img(src="/images/logo_icon.png" class="rounded-circle" width=50)
+        nav(class="navbar navbar-expand-sm")
+            button(class="navbar-toggler" type="button" data-target="#navigation")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse")
+                ul(class="navbar-nav")
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/" class="nav-link text-dark custom-nav-link") Home
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/about" class="nav-link text-dark custom-nav-link") About
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/features" class="nav-link text-dark custom-nav-link") Features
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/tutorial" class="nav-link text-dark custom-nav-link") Tutorial   
+                    li(class="nav-item active custom-nav-item")
+                        a(href="/contact" class="nav-link text-dark custom-nav-link") Contact Us 
+        div(class="col-md-3 text-end" bis_skin_checked="1")
+            a(type="button" href=username ? "/logout" : "/login" class="btn btn-outline-primary me-2")  #{username ? "Logout": "Login"} 
+                 span(class="text-dark" style="padding-left:20px") #{username && username}
+            a(type="button" href="/register" class="btn btn-primary" style=username&& 'display:none') Sign up

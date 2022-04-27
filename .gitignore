@@ -1,5 +1,8 @@
 # ignores node cache files 
 node_modules/
 
+# ignore WebStorm config file
+.idea/
+
 # ignores Word auto-save files
 ~$*.docx

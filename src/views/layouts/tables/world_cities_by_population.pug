@@ -6,9 +6,12 @@ table(class="table")
             th District     
             th Population  
     tbody
-        for city in data
+        for city,index in data
             tr(class="rows")
                 td= city.Name 
                 td= city.CountryCode               
                 td= city.District     
                 td= city.Population
+                td
+                 a(href=`/edit-city/${JSON.stringify(data[index])}` class=`btn btn-primary` id=`edit-button`) 
+                    | Edit

@@ -1,47 +1,22 @@
 extends layouts/main
 
 block content
-        div(class="text-center p-5")
+    div(class="text-center p-5")
 
-            h1 Get in touch
-            <main class="form-signin">
-                <form>
-                    <div class="form-floating" bis_skin_checked="1">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="John Doe">
-                    <label for="floatingInput">Name</label>
-                    </div>
-                    <div class="form-floating" bis_skin_checked="1">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                    </div>
-                    <div class="form-floating" bis_skin_checked="1">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="message">
-                    <label for="floatingPassword">Message</label>
-                    </div>
-
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Send</button>
-                </form>
-            </main>
-
-
-        div(class="bg-dark text-secondary px-4 py-5 text-center" bis_skin_checked="3")
-            div(class="py-8" bis_skin_checked="1")
-            H1 Contact Us
-            <form action="https://formsubmit.co/adascalului.bogdan@gmail.com" method="POST" >
-               div(class="form-floating" bis_skin_checked="1")
-                <input type="hidden" name="_captcha" value = "false" >
-                 
-                p
-                <input type = "text"  class="form-control" id="floatingInput" name = "Name" placeholder="Full Name">
-                
-                p
+        h1 Get in touch
+        main(class="form-signin")
+            form(action="https://formsubmit.co/adascalului.bogdan@gmail.com" method="POST")
                 div(class="form-floating" bis_skin_checked="1")
-                <input type = "email" class="form-control" id="floatingInput" name ="Email" placeholder="Email">
-                
+                    input(type="hidden" name="_captcha" value="false")
+                    input(type="text" class="form-control" id="floatingInput" name="name" placeholder="John Doe")
+                    label(for="floatingInput") Name
+
                 div(class="form-floating" bis_skin_checked="1")
-                p
+                    input(type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="name@example.com")
+                    label(for="floatingInput") Email address
+
                 div(class="form-floating" bis_skin_checked="1")
-                <input type = "text" class="form-control" id="floatingInput" name ="message" placeholder="Write message">
-                    
-                p
-                button(class="w-100 btn btn-lg btn-primary" type="submit") Send
+                    input(type="text" class="form-control" id="floatingPassword" name="message" Splaceholder="message")
+                    label(for="floatingPassword") Message
+
+                button(class="w-100 btn btn-lg btn-primary mt-5" type="submit") Send

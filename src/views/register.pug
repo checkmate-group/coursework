@@ -1,28 +1,30 @@
 extends layouts/main
 block content
-  h2= title
+    div(class="container")
+        div(class="alert alert-danger" role="alert") #{message && message}
+        header
+            h1(class="text-center") Register
+            
+        form(action='/register' method='POST' class="d-flex justify-content-center align-items-center flex-column")
+            
+            input(type='text' name='username' id='username' placeholder='Enter username' required='' class='form-control')
+            br
+            br
+            
+            input(type='email' name='email' id='email' placeholder='enter email' required='' class='form-control')
+            br
+            br
+            
+            input(type='password' name='password' id='password' placeholder='enter password' required='' class='form-control')
+            
+            <div class="eula" type="checkbox">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
+                <input type="checkbox" name="1" value="1" required> Agree
+            br
+            br
+            
+            button(type='submit' class="btn btn-primary") Submit
+            br
+            br
+            a
+            #mylink(href="/login") Login
 
-  if registrationError
-    .error-msg
-      p= registrationError
-
-  form.login(action='/register', method='post')
-    p User Registration
-    div
-      label(for='username') Username
-      input(type='text', id='username', name='username')
-    div
-      label(for='password') Password
-      input(type='password', id='password', name='password')
-    div
-      label(for='confirm_password') Confirm Password
-      input(type='password', id='confirm_password', name='confirmPassword')
-    div
-      input(type='hidden', name='_csrf', value=csrfToken)
-
-    if registerFormExtraParams
-      each value, key in registerFormExtraParams
-        div
-          input(type='hidden', name=key, value=value)
-    div
-      button(type='submit') Register
