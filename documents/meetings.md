@@ -1,21 +1,59 @@
 # Meeting Minutes
 
 ![](/.git_assets/logo.png "Logo")
+## 19/04/2022 - Finishing the group report (11 hours)
+The meeting started a 3:30 and all the active members of the group participated [@ZOulhadj](https://github.com/ZOulhadj), [@archeris32](https://github.com/archeris32)  [@Nero-DevOps](https://github.com/Nero-DevOps). We had a brainstorm meeting in order to decide what should we say at the presentation.
+We finished early in the morning, around 2:30 in the morning.
+
+
+## 19/04/2022 - Finishing the group report (4 hours)
+The meeting started a 7:30 and included the team leader [@ZOulhadj](https://github.com/ZOulhadj), team leader 2 [@archeris32](https://github.com/archeris32) and scrum master [@Nero-DevOps](https://github.com/Nero-DevOps). We all channeled our efforts into finishing our Group Report.
+In addition to this, we also went over the final touches that needs to be done.
+
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Cleaning up front-end 
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Front-end
+* [Taylor Head](https://github.com/Nero-DevOps) - Backend 
+
+## 16/04/2022 - Update meeting (3 hours)
+The meeting took place at 8PM and included the team leader [@ZOulhadj](https://github.com/ZOulhadj), team leader 2 [@archeris32](https://github.com/archeris32) and scrum master [@Nero-DevOps](https://github.com/Nero-DevOps). The team discussed all progress up until now and what had to be done for the final sprint (Sprint 4). Each member
+of the team was given a set of tasks that they will each work on for the final sprint. 
+
+In addition to this, we also went over the group report requirements and template in order to start working on our report.
+
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Cleaning up front-end and group report
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Front-end and group report
+* [Taylor Head](https://github.com/Nero-DevOps) - Backend and group report
+
+## 30/03/2022 - Update meeting (45 minutes)
+We called this meeting to prepare for our presentation to organise the best we can be and follow up with working on issues and other works loads connected to sprint 4.
+
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Preparing workloads and implementing a plan for sprint 4.
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Working on Security features of the site
+* [Taylor Head](https://github.com/Nero-DevOps) - Working on user inputs for reports and added functionality of entering data via the website into the database  
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Updating the project broard
+
+## 25/03/2022 - Update meeting (75 minutes)
+This meeting was to check everything was in place for submission and to review GitHub. And ensure all documentation and issues have been checked.
+
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Working on frontend and TravisCI
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Working on Documentation and frontend
+* [Taylor Head](https://github.com/Nero-DevOps) - Working on the reports and backend
+* [Mohamed Kaizra](https://github.com/KezzyRk) - Reviewing documentation and looking for issues
 
 ## 21/03/2022 - Update meeting (60 minutes)
 We set up a meeting last night to iron out the details for what we need to do for sprint 3 and assigning each of the group members their tasks, we also looked at a few ways we can tackle some of the issues that were made.
 
-* [@ZOulhadj](https://github.com/ZOulhadj) - Working on UI and also backend
-* [@archeris32](https://github.com/archeris32) - Working on a log-in system
-* [@Nero-DevOps](https://github.com/Nero-DevOps) - Working on the database
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Working on UI and also backend
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Working on a log-in system
+* [Taylor Head](https://github.com/Nero-DevOps) - Working on the database
 * [Mohamed Kaizra](https://github.com/KezzyRk) - Working on UI and pages and reviewing meetings document
 
 ## 08/03/2022 - Update meeting (120 minutes)
 We all set up a meeting to ensure that we had everything covered for sprint 2, just adding the finishing touches and reviewing the next steps for sprint 3. This was us coming together, looking at the project as a whole team, and overviewing everything.
 
-* [@ZOulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
-* [@archeris32](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
-* [@Nero-DevOps](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Reviewing frontend and management of GitHub
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Reviewing Use-Case document plus some frontend elements 
+* [Taylor Head](https://github.com/Nero-DevOps) - Reviewing the base and troubleshooting
 * [Mohamed Kaizra](https://github.com/KezzyRk) - Review the meetings document
 
 ## 04/03/2022 - Update meeting (30 minutes)
@@ -35,7 +73,7 @@ We had a very long meeting to discuss how we could connect the front and back en
 
 ## 28/02/2022 - Update meeting (50 minutes)
 We have a video call on our Discord group. Everyone shares their ideas about how to improve the WebApp. 
-[@ZOulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/). We find it really helpful.
+[Zakariya Oulhadj](https://github.com/ZOulhadj) tells us about [Bootstrap](https://getbootstrap.com/). We find it really helpful.
 
 
 ## 26/02/2022 - Project meeting (120 minutes)
@@ -48,9 +86,9 @@ and new information that we recevied during today's class.
 ## 21/02/2022 - Checking each others work (45 minutes)
 After a 1 week break, we came back to discuss the work. During this meeting we assigned tasks to a few members of the group.
 
-* [@ZOulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create About Us page and use of Personas
-* [@archeris32](https://github.com/archeris32) - Use case diagram & Continue with the development 
-* [@Nero-DevOps](https://github.com/Nero-DevOps) - Continue developing the base
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - Issue being used & Continue with the development & create About Us page and use of Personas
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Use case diagram & Continue with the development 
+* [Taylor Head](https://github.com/Nero-DevOps) - Continue developing the base
 
 ## 14/02/22 - Meeting canceled
 Due to health issues such as COVID-19 and others so we decided that this week we will postpone the meeting. Everyone should simply continue with their work.
@@ -75,10 +113,10 @@ significant experience with GitHub, so during this meeting he shares some knowle
 merges as well as the GitHub website.
 
 We also decide on who's going to do what for this sprint:
-* [@ZOulhadj](https://github.com/ZOulhadj) - GitHub Set-Up
-* [@Nero-DevOps](https://github.com/Nero-DevOps) - Dockerfile Set-up
-* [@archeris32](https://github.com/archeris32) - Code of Conduct
-* [@KezzyRk](https://github.com/KezzyRk) - First release created
+* [Zakariya Oulhadj](https://github.com/ZOulhadj) - GitHub Set-Up
+* [Taylor Head](https://github.com/Nero-DevOps) - Dockerfile Set-up
+* [Samoil-Bogdan Adascalului](https://github.com/archeris32) - Code of Conduct
+* [Mohamed Kaizra](https://github.com/KezzyRk) - First release created
 
 
 ## 26/01/22 - Second meeting (30 min)

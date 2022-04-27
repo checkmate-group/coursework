@@ -1,0 +1,11 @@
+table(class="table")
+    thead
+        tr
+            th Country                 
+            th Population in cities    
+            th Population out of cities    
+        for cp,index in data
+            tr(class="rows")
+                td= cp.country
+                td= cp.pinc                                                   
+                td= cp.poutc

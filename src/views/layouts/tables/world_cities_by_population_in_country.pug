@@ -8,7 +8,7 @@ for country in countries
                 th Population   
                 th Country  
         tbody
-            for city in citiesInCountry
+            for city,index in citiesInCountry
                 if city.Country === country
                     tr(class="rows")
                         td= city.Name 
@@ -16,3 +16,6 @@ for country in countries
                         td= city.District     
                         td= city.Population                  
                         td= city.Country 
+                        td
+                          a(href=`/edit-city/${JSON.stringify(citiesInCountry[index])}` class=`btn btn-primary` id=`edit-button`) 
+                           | Edit

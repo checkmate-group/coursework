@@ -12,13 +12,13 @@ develop a CRUD application. A CRUD application is effectively a front-end to a d
 providing a method to create, read, update, and delete data from a web site to a database on a server.
 
 # Group Members
-* [@ZOulhadj](https://github.com/ZOulhadj)
-* [@Nero-DevOps](https://github.com/Nero-DevOps)
-* [@archeris32](https://github.com/archeris32)
-* [@KezzyRk](https://github.com/KezzyRk)
+* [@ZOulhadj](https://github.com/ZOulhadj) (Team Leader 1)
+* [@archeris32](https://github.com/archeris32) (Team Leader 2)
+* [@Nero-DevOps](https://github.com/Nero-DevOps) (Scrum Master)
+* [@KezzyRk](https://github.com/KezzyRk) (Project Owner)
 
 
-![](.git_assets/gource.gif "Group Work")
+![](.git_assets/repo_overview.png "Group Work")
 
 
 # Wiki

@@ -9,7 +9,7 @@ for continent in continents
                 th Population
                 th Capital  
         tbody
-            for country in countriesInContinent
+            for country,index in countriesInContinent
                 if country.Continent === continent
                     tr(class="rows")
                         td= country.Code 
@@ -18,3 +18,6 @@ for continent in continents
                         td= country.Region                                  
                         td(class="text-end")= country.Population                                  
                         td(class="text-end")= country.Capital
+                        td
+                          a(href=`/edit/${JSON.stringify(countriesInContinent[index])}` class=`btn btn-primary` id=`edit-button`) 
+                           | Edit
