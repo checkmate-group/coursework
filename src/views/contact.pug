@@ -8,15 +8,15 @@ block content
             form(action="https://formsubmit.co/adascalului.bogdan@gmail.com" method="POST")
                 div(class="form-floating" bis_skin_checked="1")
                     input(type="hidden" name="_captcha" value="false")
-                    input(type="text" class="form-control" id="floatingInput" placeholder="John Doe")
+                    input(type="text" class="form-control" id="floatingInput" name="name" placeholder="John Doe")
                     label(for="floatingInput") Name
 
                 div(class="form-floating" bis_skin_checked="1")
-                    input(type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com")
+                    input(type="email" class="form-control" id="floatingInputEmail" name="email" placeholder="name@example.com")
                     label(for="floatingInput") Email address
 
                 div(class="form-floating" bis_skin_checked="1")
-                    input(type="text" class="form-control" id="floatingPassword" placeholder="message")
+                    input(type="text" class="form-control" id="floatingPassword" name="message" Splaceholder="message")
                     label(for="floatingPassword") Message
 
                 button(class="w-100 btn btn-lg btn-primary mt-5" type="submit") Send
